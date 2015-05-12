@@ -1,18 +1,17 @@
 body {
   background: LightGray;
-  width: 500px;
-  margin: auto;
+  font-family: sans-serif;
 }
 
-h1, h2, h3 {
-  font-family: sans-serif;
+.wrap {
+  width: 600px;
+  margin: auto;
 }
 
 blockquote {
   text-align: center;
-  padding: auto;
   border: 1px solid white;
-  margin: auto;
+  margin-left: 0;
 }
 
 .author {
