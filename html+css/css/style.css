@@ -8,5 +8,7 @@ h1 {
 }
 
 div {
-    margin-left: 50px;
+    width: 500px;
+    background: AliceBlue;
+    margin: auto;
 }
