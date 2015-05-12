@@ -13,6 +13,10 @@
     .meat {
       color: green;
     }
+    li:nth-child(3) {
+      background: Beige;
+      color: orange;
+    }
   </style>
 </head>
 <body>
@@ -27,7 +31,7 @@
   <h1>Unordered list</h1>
   <p>Things <strong>I</strong> <em>must</em> buy <span>today.</span></p>
   <ul>
-    <!--use id to style single elements, ref with # and class to style multiple elements, ref with . -->
+    <!--use id to style single elements, ref with # and class to style multiple elements, ref with .; nth-child to target without id or class-->
     <li id="potatoes">potatoes</li>
     <li class="meat">meat</li>
     <li>cheese</li>
