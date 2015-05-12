@@ -6,3 +6,7 @@ a {
 h1 {
   font-family: sans-serif;
 }
+
+div {
+    margin-left: 50px;
+}
