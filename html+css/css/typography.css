@@ -1,0 +1,26 @@
+body {
+    background: GhostWhite;
+}
+
+.first {
+    font-size: 120px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: monospace;
+    letter-spacing: -5px;
+    color: #666;
+    text-transform: lowercase;
+    text-shadow: 0 1px 0 black;
+}
+.second {
+    font-size: 120px;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 5px 10px 10px #666;
+}
+.third {
+    font-size: 120px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Indie Flower', cursive;
+}
