@@ -1,0 +1,34 @@
+.container_12 {
+    background: AntiqueWhite;
+}
+
+nav li {
+    display: inline;
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+aside {
+    background: CornflowerBlue;
+}
+
+.primary {
+    background: gray;
+}
+
+header {
+    background: lightgray;
+}
+
+.main {
+    margin: 30px 0;
+}
+
+nav {
+    background: darkgray;
+}
+
+section {
+    box-sizing: border-box;
+    padding: 15px;
+}
