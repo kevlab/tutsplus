@@ -1,0 +1,101 @@
+/*
+=MISC
+*/
+.container_24 {
+  margin-top: 10px;
+}
+
+p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #353535;
+}
+
+h1, h2 {
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 26px;
+  text-transform: lowercase;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 27px;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #7e7e7e;
+  text-decoration: none;
+}
+
+a:hover, .selected {
+  color: black;
+}
+
+li {
+  margin-left: 24px;
+}
+
+.button {
+  background: #242324;
+  padding: 6px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  color: white;
+}
+
+/*
+=HEADER
+*/
+header {
+  overflow: hidden;
+}
+header h1 {
+  background: url(../img/logo.jpg) no-repeat;
+  width:174px;
+  height:23px;
+  text-indent: -9999px;
+  margin: 10px 10px 22px;
+  float: left;
+}
+
+/*
+=NAV
+*/
+nav {
+  float: right;
+  padding-top: 18px;
+}
+nav li {
+  display: inline;
+}
+
+/*
+=BANNER
+*/
+.banner {
+  background: url(../img/darling-harbour.jpg) no-repeat;
+  width:695px;
+  height: 231px;
+}
+
+.callout {
+  background: black;
+  height: 231px;
+}
+
+/*
+=MAIN
+*/
+.main {
+  margin-top: 20px;
+}
+
+/*
+=F00TER
+*/
+footer {
+  clear: both;
+}
