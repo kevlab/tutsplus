@@ -49,12 +49,15 @@ li {
 }
 
 .button {
-  background: #242324;
+  background: #353535;
   padding: 6px;
   text-transform: uppercase;
+  color: white;
+  font-size: 11;
 }
 
 .button:hover {
+  background: black;
   color: white;
 }
 
@@ -158,4 +161,29 @@ footer {
   clear: both;
   border-top: 1px solid #d1d1d1;
   padding-top: 18px;
+  margin-top: 30px;
+}
+
+/*
+=WORK
+*/
+.work h2, .work h4 {
+  font-weight: normal;
+  font-size: 26px;
+}
+
+.work h2 {
+  margin-bottom: 0;
+}
+
+.work img {
+  margin-bottom: 20px;
+}
+
+.work h4 {
+  color: #787878;
+  line-height: 1.2em;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 33px;
+  margin-bottom: 30px;
 }
