@@ -5,6 +5,17 @@
   margin-top: 10px;
 }
 
+blockquote {
+  position: relative;
+}
+
+blockquote, blockquote p {
+  font-size: 15px;
+  line-height: 20px;
+  font-style: italic;
+  color: #0e0e0e;
+}
+
 p {
   font-size: 12px;
   line-height: 20px;
@@ -91,6 +102,32 @@ nav li {
 */
 .main {
   margin-top: 20px;
+}
+
+.main blockquote p {
+  padding-left: 30px;
+}
+
+.main blockquote p:before,
+.main blockquote p:after {
+  font-size: 40px;
+  color: #bfbfbf;
+  font-size: italic;
+}
+
+.main blockquote p:first-child:before {
+  content: '“';
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
+
+.main blockquote p:last-child:after {
+  content: '”';
+  float: right;
+  position: absolute;
+  bottom: -7px;
+  right: 0;
 }
 
 /*
