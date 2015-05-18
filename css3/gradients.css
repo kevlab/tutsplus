@@ -1,0 +1,33 @@
+body {
+    background: #666;
+}
+
+.box {
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    background: -webkit-linear-gradient(black, white);
+    background: -o-linear-gradient(black, white);
+    background: linear-gradient(black, white);
+    color: white;
+}
+
+.box2 {
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    background: -webkit-linear-gradient(black, red 50%, green 50%, yellow);
+    background: -o-linear-gradient(black, red 50%, green 50%, yellow);
+    background: linear-gradient(black, red 50%, green 50%, yellow);
+    color: white;
+}
+
+.box3 {
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    background: -webkit-linear-gradient(left, red 50%, green 50%);
+    background: -o-linear-gradient(left, red 50%, green 50%);
+    background: linear-gradient(to right, red 50%, green 50%);
+    color: white;
+}
