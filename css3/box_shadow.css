@@ -1,0 +1,25 @@
+body {
+    width: 200px;
+    margin: 100px auto 0;
+}
+
+.box {
+    background: red;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.7);
+}
+
+.box2 {
+    background: red;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    box-shadow:
+        0 0 0 2px yellow,
+        0 0 0 4px green,
+        0 0 0 6px orange;
+}
