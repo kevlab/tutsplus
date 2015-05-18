@@ -1,0 +1,29 @@
+.employees {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 100px auto;
+}
+
+.employees td, .employees th {
+    font-size: 1em;
+    border: 2px solid Teal;
+    padding: 3px 7px;
+}
+
+.employees th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: LightSlateGray;
+    color: #ffffff;
+}
+
+.employees tr:nth-child(2n+1) td{
+    color: #000000;
+    background-color: LightSteelBlue;
+}
+
+.employees tr td:first-child {
+  font-weight: bold;
+}
