@@ -1,0 +1,10 @@
+body {
+    background: #e3e3e3;
+}
+
+#text {
+    font-size: 100px;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 10px red;
+}
