@@ -1,0 +1,11 @@
+body {
+    margin: 100px auto;
+    width: 600px;
+}
+
+p {
+    /*-moz-column-count: 3;
+    -webkit-column-count: 3;*/
+    -moz-column-width: 100px;
+
+}
