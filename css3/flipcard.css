@@ -11,23 +11,33 @@ li {
   margin-bottom: 50px;
   position: relative;
   cursor: pointer;
+  counter-increment: item;
 }
 
 li div {
   width: 100%;
   height: 100%;
   position: absolute;
-  transition: all .3s;
+  transition: all .4s;
   backface-visibility: hidden;
+  box-shadow: 0 6px 10px -8px rgba(0,0,0,.8);
 }
 
 .front {
-  z-index: 0;
-  color: black;
+  z-index: 2;
+  color: darkgray;
   text-align: center;
   line-height: 200px;
   font-size: 80px;
   background: #e3e3e3;
+}
+
+.front:after {
+  content: counter(item);
+}
+
+.back {
+  transform: rotateY(180deg);
 }
 
 li:hover .front {
@@ -37,9 +47,5 @@ li:hover .front {
 
 li:hover .back {
   z-index: 0;
-  transform: rotateY(0);
-}
-
-.back {
-  transform: rotateY(180deg);
+  transform: rotateY(0deg);
 }
