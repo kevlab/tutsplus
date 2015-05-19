@@ -1,0 +1,21 @@
+/*
+a[href="http://www.ubuntu.com"] {
+  color: green;
+}
+*/
+
+a[href*="ubuntu"] { /* * for contains */
+  color: green;
+}
+
+a[href$=".pdf"]:before { /* $ for endswith  ^ for beginswith */
+  content: 'PDF';
+  font-size: 11px;
+  font-family: sans-serif;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  padding: 2px;
+  margin-right: 5px;
+}
+
