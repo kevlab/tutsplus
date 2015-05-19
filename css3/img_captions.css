@@ -1,0 +1,42 @@
+body {
+  width: 400px;
+  margin: 50px auto;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+  border: 5px solid white;
+  box-shadow: 0 0 4px rgba(0,0,0,.3);
+  display: block;
+}
+
+figcaption {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,.2);
+  color: white;
+}
+
+figcaption h3 {
+  background: black;
+}
+
+figcaption h3,
+figcaption p {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+figcaption a {
+  color: white;
+}

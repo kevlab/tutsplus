@@ -46,6 +46,5 @@ li:hover .front {
 }
 
 li:hover .back {
-  z-index: 0;
   transform: rotateY(0deg);
 }
