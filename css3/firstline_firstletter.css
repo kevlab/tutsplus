@@ -1,0 +1,17 @@
+p {
+  line-height: 1.5em;
+}
+
+p::first-line {
+  font-weight: bold;
+  font-size: 1.5em;
+
+}
+p::first-letter {
+  font-family: 'Calligraffitti', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  float: left;
+  padding-left: 4px;
+
+}
