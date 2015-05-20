@@ -1,0 +1,66 @@
+body {
+  width: 540px;
+  margin: auto;
+  font-family: 'Patrick Hand', cursive;  background: #666;
+  color: #666;
+}
+
+article {
+  margin: 50px auto;
+  padding: 20px 50px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  background: #fcf59b;
+  background: linear-gradient(#81cbbc, #fcf59b 2%);
+  background-size: 100% 40px;
+}
+
+article:focus {
+  outline: none;
+  color: black;
+  border-radius: 0;
+}
+
+article:focus:after,
+article:focus:before {
+  content: none;
+}
+
+article,
+article:after,
+article:before {
+  border-bottom-left-radius: 20px 500px;
+  border-bottom-right-radius: 500px 30px;
+  border-top-right-radius: 5px 100px;
+}
+
+article:after,
+article:before {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+article:before {
+  transform: rotate(4deg);
+  background: #fcf6a7;
+}
+
+article:after {
+    transform: rotate(-4deg);
+  background: #fcf7b1;
+}
+
+h1 {
+  padding-top: 8px;
+  margin-bottom: -8px;
+}
+
+p {
+  line-height: 2.5em;
+  margin-bottom: 40px;
+}
