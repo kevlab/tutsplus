@@ -21,6 +21,8 @@ ul, li {
 
 .slider-wrap ul {
   width: 10000px;
+  position: relative;
+  animation: slide 20s;
 }
 
 .slider-wrap li {
@@ -41,4 +43,34 @@ ul, li {
   color: white;
   padding: 10px 0;
   margin-bottom: 0;
+  animation: headings 20s;
+}
+
+.slider-wrap ul,
+.slider-wrap h5 {
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+.slider-wrap ul:hover,
+.slider-wrap ul:hover h5 {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0%,10% {left: 0;}
+  15%,30% {left: -200px;}
+  35%,50% {left: -400px;}
+  55%,70% {left: -600px;}
+  75%,90% {left: -800px;}
+  93%,100% { left: 0;}
+}
+
+@keyframes headings {
+   0%,10%,15%,30%,35%,50%,55%,70%,75%,90% {
+      bottom: 4px;
+   }
+   13%,33%,53%,73%,93%,100% {
+      bottom: -200px;
+   }
 }
