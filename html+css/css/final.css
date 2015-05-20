@@ -187,3 +187,7 @@ footer {
   padding-bottom: 33px;
   margin-bottom: 30px;
 }
+
+strong {
+  font-weight: bold;
+}
