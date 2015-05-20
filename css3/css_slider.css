@@ -1,0 +1,44 @@
+body {
+  width: 200px;
+  margin: auto;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+.slider-wrap {
+  width: 200px;
+  overflow: hidden;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-wrap ul {
+  width: 10000px;
+}
+
+.slider-wrap li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+.slider-wrap a {
+  text-decoration: none;
+}
+
+.slider-wrap h5 {
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  background: rgba(0,0,0,.3);
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
