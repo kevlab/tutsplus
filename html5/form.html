@@ -6,7 +6,20 @@
 </head>
 <body>
   <form action="">
-    <input type="email" required> <!-- built in validation -->
+    <input type="email" required>
+    <!-- built in validation but don't count on it -->
+    <input type="submit">
+  </form>
+  <br>
+  <br>
+  <form action="">
+    <input type="url">
+    <input type="submit">
+  </form>
+  <br>
+  <br>
+  <form action="">
+    <input type="tel" pattern="\d{3}-\d{3}-\d{4}">
     <input type="submit">
   </form>
 </body>
