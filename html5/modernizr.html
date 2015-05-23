@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<html class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <title>Modernizr feature detection</title>
+  <style>
+  .no-flexbox {
+    /* float as an alternative */
+  }
+  </style>
+  <script src="modernizr-latest.js"></script>
+  <!-- modernizr also implement html5-shim
+       should be loaded in the head and after the stylesheets-->
+</head>
+<body>
+
+  <script>
+  if ( !Modernizr.localstorage ) {
+   // polyfill
+  }
+  </script>
+</body>
+</html>
