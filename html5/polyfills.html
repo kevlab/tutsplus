@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<html class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <title>polyfill</title>
+  <script src="modernizr-latest.js"></script>
+</head>
+<body>
+
+  <!--polyfill won't be used in browsers that already support localstorage
+      but the stript still has to be loaded -->
+  <scipt src="localstorage_polyfill.js"></scipt>
+
+  <script>
+    localStorage.setItem('key', 'value')
+  </script>
+</body>
+</html>
