@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<html class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Local Storage</title>
+  <script src="modernizr.custom.85195.js"></script>
+</head>
+<body>
+  <h2></h2>
+
+  <script>
+  //localStorage.setItem('name', 'Kevin') we set it; now get it:
+  if (localStorage.getItem('name')) {
+    document.querySelector('h2').innerHTML = localStorage.getItem('name')
+  }
+  //localStorage.clear to delete
+  </script>
+</body>
+</html>
