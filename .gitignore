@@ -1,0 +1,9 @@
+*.pyc
+*.swp
+.DS_Store
+.hg
+*.TMP
+.coverage
+htmlcov/
+cover/
+Thumbs.db
