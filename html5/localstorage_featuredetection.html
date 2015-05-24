@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<html class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Local Storage</title>
+  <script src="modernizr.custom.85195.js"></script>
+</head>
+<body>
+  <h2></h2>
+
+  <script>
+  //manual feature detection
+  //var supportsStorage = function() {
+  //  try {
+  //    return 'localStorage' in window && window['localStorage'] !== null;
+  //  } catch(e) {
+  //    return false;
+  //  }
+  //};
+
+  //modernizr detection
+  if (Modernizr.localstorage) {
+    alert('Supports!');
+  }
+  </script>
+</body>
+</html>
