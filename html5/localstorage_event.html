@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<html class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <title>localstorage event</title>
+  <script src="modernizr.custom.85195.js"></script>
+  <style>
+  label, input[type=submit] { display: block;}
+
+  </style>
+</head>
+<body>
+
+  <form action="">
+    <label for="name">Your name?</label>
+
+    <input type="text" id="name" name="name">
+  </form>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+(function() {
+  if (Modernizr.localstorage) {
+    var name = document.getElementById('name');
+    name.value = localStorage.name || '';
+
+    name.addEventListener('blur', function() {
+      if (this.value) localStorage.setItem('name', this.value)
+    }, false);
+
+    //does not work localy, need to work on a server
+    //python -m SimpleHTTPServer 8000
+    //open multiple tabs; the value is saved even when we switch tabs
+    window.addEventListener('storage', function() {
+      name.value = localStorage.name;
+    }, false);
+
+  }
+})();
+</script>
+
+</body>
+</html>
