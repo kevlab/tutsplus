@@ -22,14 +22,29 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <script>
+//form content saved even hen we hit 'F5'
 (function() {
   var form = $('form');
 
   if ( localStorage.formData ) {
     (function bindStorageToForm() {
       var data = localStorage.formData,
-          sp = data.split('&');
-          console.log(sp);
+          sp = data.split('&'),
+          pair;
+
+      $.each(sp, function(i, val) {
+        pair = val.split('=');
+        //console.log(pair); check
+        if ( !pair[1] ) return true; //continue
+
+        if ( pair[1] === 'on' ) {
+          //radio ro checkbox
+          form[0][pair[0]].checked = true;
+        }
+
+        form[0][pair[0]].value = unescape(pair[1]).replace(/\+/g, ' ');
+        //form.name
+      })
     })();
   }
 
