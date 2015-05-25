@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<html class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <title>localstorage save objects</title>
+  <script src="modernizr.custom.85195.js"></script>
+</head>
+<body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+(function() {
+
+  if (localStorage.info) {
+    console.log( JSON.parse(localStorage.info));
+  }
+
+  var o = {
+    first: 'kev',
+    last: 'lab'
+  };
+
+  Modernizr.localstorage && (localStorage.info = JSON.stringify(o));
+  //check localStorage.info in browser console
+})();
+</script>
+
+</body>
+</html>
