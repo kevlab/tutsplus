@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<html class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <title>localstorage save form data</title>
+  <script src="modernizr.custom.85195.js"></script>
+  <style>input, textarea { display: block;}</style>
+</head>
+<body>
+
+  <form action="">
+    <input type="text" name="title">
+    <input type="text" name="name">
+    <textarea name="comment"></textarea>
+    <input type="checkbox" name"someCheck">
+    <input type="radio" name="someRadio">
+    <input type="submit">
+  </form>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+(function() {
+  var form = $('form');
+
+  if ( localStorage.formData ) {
+    (function bindStorageToForm() {
+      var data = localStorage.formData,
+          sp = data.split('&');
+          console.log(sp);
+    })();
+  }
+
+  if ( Modernizr.localstorage ) {
+    setInterval(function() {
+     localStorage.formData = form.serialize();
+    }, 3000);
+  }
+
+})();
+</script>
+
+</body>
+</html>
