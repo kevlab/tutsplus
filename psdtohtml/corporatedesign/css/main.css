@@ -122,6 +122,11 @@ nav {
   width: 100px;
   height: 31px; /*45-14 ( - padding)*/
   /*background: beige; to show better*/
+  transition: background .5s;
+}
+
+.main-nav li a:hover {
+  background: #eee;
 }
 
 .search {
