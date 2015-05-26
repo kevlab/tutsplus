@@ -68,6 +68,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #a1a1a1;
   text-decoration: none;
   font-size: 2.5em; /* rather than use font awesome classes as we want between 2x and 3x*/
+  transition: color .5s;
+}
+
+.social a:hover i.fa-facebook-square{
+  color: #3b5998;
+}
+
+.social a:hover i.fa-twitter-square{
+  color: #4099ff;
+}
+
+.social a:hover i.fa-google-plus-square{
+  color: #d34836;
+}
+
+.social a:hover i.fa-youtube-square{
+  color: #ff3333;
 }
 
 /********************* NAVIGATION MENU *******************/
