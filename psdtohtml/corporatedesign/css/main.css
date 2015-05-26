@@ -14,6 +14,7 @@ body {
   margin: 0 auto;
 }
 
+/********************* LOGO *******************/
 h1, h2, h3, h4, h5, h6 {
   color: #ec8e08;
   font-family: colossalis, sans-serif;
@@ -34,4 +35,26 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 10px;
   position: relative;
   top: -.2em;
+}
+
+
+/********************* SOCIAL MEDIA *******************/
+.social ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.social ul li {
+  display: inline-block;
+}
+
+.social p {
+  margin-bottom: 2px;
+}
+
+.social a i {
+  color: #a1a1a1;
+  text-decoration: none;
+  font-size: 2.5em; /* rather than use font awesome classes as we want between 2x and 3x*/
 }
