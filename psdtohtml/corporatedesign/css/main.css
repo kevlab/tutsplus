@@ -1,0 +1,9 @@
+@font-face {
+  font-family: colossalis;
+  src: url('Colossalis Bold.ttf');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ec8e08;
+  font-family: colossalis, sans-serif;
+}
