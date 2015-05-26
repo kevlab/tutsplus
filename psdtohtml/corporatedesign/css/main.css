@@ -88,6 +88,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /********************* NAVIGATION MENU *******************/
-.main-nav {
+nav {
+  border: 1px solid #ccc;
   clear: both;
+  width: 958px;
+  height: 45px;
+}
+
+.main-nav {
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-nav li {
+  border-right: 1px solid #ccc;
+  float: left;
+  position: relative; /* so the a below can be positioned absolutely*/
+  width: 100px;
+  height: 45px;
+}
+
+.main-nav li a {
+/*we want the entire block to be clickable so we make the a take the entire space*/
+/*display: inline-box; also an option rather than what we do here using absolute positioning*/
+  color: #a1a1a1;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 14px;
+  position: absolute;
+  width: 100px;
+  height: 31px; /*45-14 ( - padding)*/
+  /*background: beige; to show better*/
+}
+
+.search {
+
 }
