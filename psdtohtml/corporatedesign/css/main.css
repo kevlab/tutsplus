@@ -14,10 +14,15 @@ body {
   margin: 0 auto;
 }
 
-/********************* LOGO *******************/
 h1, h2, h3, h4, h5, h6 {
   color: #ec8e08;
   font-family: colossalis, sans-serif;
+}
+
+/********************* LOGO *******************/
+.logo {
+  float: left;
+  max-width: 50%;
 }
 
 .logo h2 {
@@ -37,8 +42,13 @@ h1, h2, h3, h4, h5, h6 {
   top: -.2em;
 }
 
-
 /********************* SOCIAL MEDIA *******************/
+.social {
+  float: right;
+  max-width: 50%;
+  text-align: right;
+}
+
 .social ul {
   list-style: none;
   padding-left: 0;
@@ -50,11 +60,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social p {
-  margin-bottom: 2px;
+  font-size: .85em;
+  margin: 10px 0 2px 0;
 }
 
 .social a i {
   color: #a1a1a1;
   text-decoration: none;
   font-size: 2.5em; /* rather than use font awesome classes as we want between 2x and 3x*/
+}
+
+/********************* NAVIGATION MENU *******************/
+.main-nav {
+  clear: both;
 }
