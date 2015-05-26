@@ -130,5 +130,20 @@ nav {
 }
 
 .search {
+  color: #a1a1a1;
+  float: right;
+  margin: 10px 10px 0 0;
+}
 
+.search input {
+  border: 1px solid #a1a1a1;
+  background: #eee;
+  border-radius: 30px;
+  padding-left: 8px;
+  margin-right: 5px; /* a icon too close */
+}
+
+.search a {
+  text-decoration: none;
+  color: #a1a1a1;
 }
