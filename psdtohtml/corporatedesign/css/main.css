@@ -254,11 +254,6 @@ nav {
 }
 
 /********************* FOUR COLUMNS LAYOUT *******************/
-.meet-the-team {
-  padding-top: 20px;
-  margin-bottom: 2px;
-}
-
 .column-one-fourth {
   border: 1px solid #ddd;
   border-left: none; /*don't want to double borders*/
@@ -269,4 +264,25 @@ nav {
 
 .column-one-fourth:first-child {
   border-left: 1px solid #ddd;
+}
+
+.meet-the-team {
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+.image-container {
+  position: relative;
+  height: 160px; /*same as img*/
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  width: 200px; /* = 220 width of img - 2 x 10 padding*/
+  padding: 3px 10px;
+  background: black;
+  color: white;
+  opacity: .5;
+
 }
