@@ -205,3 +205,26 @@ nav {
   font-size: 30px;
   font-weight: normal;
 }
+
+.slider-button {
+/*must position absolutely or make block-level to set width & height of inline element (a tag is inline)*/
+  display: inline-block;
+  background: #8bcf48;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  width: 280px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 10px;
+  transition: background .5s;
+}
+
+.slider-button:hover {
+  background: #9cdf59;
+}
+
+.slider-button span {
+  font-size: 14px;
+}
