@@ -165,6 +165,12 @@ nav {
   opacity: .5;
   position: absolute;
   top: 115px;
+  transition: opacity .5s;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+  opacity: 1;
 }
 
 .slider-prev {
@@ -174,3 +180,4 @@ nav {
 .slider-next {
   right: 10px;
 }
+
