@@ -19,6 +19,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: colossalis, sans-serif;
 }
 
+.clear {
+  clear: both;
+}
 /********************* LOGO *******************/
 .logo {
   float: left;
@@ -90,7 +93,6 @@ h1, h2, h3, h4, h5, h6 {
 /********************* NAVIGATION MENU *******************/
 nav {
   border: 1px solid #ccc;
-  clear: both;
   width: 958px;
   height: 45px;
 }
@@ -227,4 +229,26 @@ nav {
 
 .slider-button span {
   font-size: 14px;
+}
+
+/********************* THREE COLUMNS LAYOUT *******************/
+.column-one-third,
+.column-two-thirds {
+  margin-right: 24px;
+  padding: 0;
+/*float or inline-block to put the columns next to one another*/
+  float: left;
+}
+
+.column-one-third:last-child,
+.column-two-thirds:last-child {
+  margin-right: 0;
+}
+
+.column-one-third {
+  width: 304px;
+}
+
+.column-two-thirds {
+ width: 632px; /*304 x 2 + 24*/
 }
