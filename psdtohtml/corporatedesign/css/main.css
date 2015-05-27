@@ -1,6 +1,6 @@
 @font-face {
   font-family: colossalis;
-  src: url('Colossalis Bold.ttf');
+  src: url('Colossalis Bold.ttf'); /*ttf won't work in IE*/
 }
 
 body {
@@ -302,8 +302,20 @@ footer {
   border-top: 8px solid #ec8e08;
   background: #555;
   margin-top: 20px;
+  width: 100%; /* not needed*/
 }
 
 .footer-row {
+  width: 960px;
+  margin: 0 auto;
+}
 
+
+.copyright {
+  border-top: 1px solid #888;
+  font-size: 13px;
+  text-align: center;
+  width: 960px;
+  padding: 10px;
+  margin: 0 auto;
 }
