@@ -310,6 +310,21 @@ footer {
   margin: 0 auto;
 }
 
+.footer-row h3 {
+  color: white;
+  font: 1.4em "Trebuchet MS", Tahoma, sans-serif;
+}
+
+.thumbnails {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.thumbnails li {
+  float: left;
+  margin-right: 8px;
+}
 
 .copyright {
   border-top: 1px solid #888;
