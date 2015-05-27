@@ -22,6 +22,17 @@ h1, h2, h3, h4, h5, h6 {
 .clear {
   clear: both;
 }
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 /********************* LOGO *******************/
 .logo {
   float: left;
@@ -284,5 +295,15 @@ nav {
   background: black;
   color: white;
   opacity: .5;
+}
+
+/********************* FOOTER *******************/
+footer {
+  border-top: 8px solid #ec8e08;
+  background: #555;
+  margin-top: 20px;
+}
+
+.footer-row {
 
 }
