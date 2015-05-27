@@ -147,3 +147,30 @@ nav {
   text-decoration: none;
   color: #a1a1a1;
 }
+
+/********************* SLIDER *******************/
+.slider {
+  background: #eee url("../img/slider-bg.jpg") no-repeat; /*color as fallback if img doesn't load*/
+  width: 960px; /*from slider-bg.jpg*/
+  height: 260px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.slider-prev,
+.slider-next {
+  color: #444;
+  font-size: 30px;
+  text-decoration: none;
+  opacity: .5;
+  position: absolute;
+  top: 115px;
+}
+
+.slider-prev {
+  left: 10px;
+}
+
+.slider-next {
+  right: 10px;
+}
