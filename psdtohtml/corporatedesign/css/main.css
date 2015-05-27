@@ -252,3 +252,21 @@ nav {
 .column-two-thirds {
  width: 632px; /*304 x 2 + 24*/
 }
+
+/********************* FOUR COLUMNS LAYOUT *******************/
+.meet-the-team {
+  padding-top: 20px;
+  margin-bottom: 2px;
+}
+
+.column-one-fourth {
+  border: 1px solid #ddd;
+  border-left: none; /*don't want to double borders*/
+  padding: 10px;
+  width: 218.75px;
+  float: left;
+}
+
+.column-one-fourth:first-child {
+  border-left: 1px solid #ddd;
+}
