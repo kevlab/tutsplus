@@ -15,6 +15,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+.bg-orange {background: #f26c4e;}
+.bg-purple  {background: #cf6baa;}
+.bg-yellow {background: #f2c24d;}
+.bg-green {background: #a3d178;}
+.bg-blue {background: #78ccd0;}
+.bg-dark-green {background: #8ebe5f;}
+
 /******************** HEADER ********************/
 header {
   text-align: center;
