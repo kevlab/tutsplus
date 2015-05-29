@@ -88,6 +88,18 @@ header {
   position: absolute;
 }
 
+.main-nav .bg-orange, .main-nav .bg-purple, .main-nav .bg-yellow,
+.main-nav .bg-green, .main-nav .bg-blue {
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+.main-nav .bg-orange:hover {background: #fd8a70;}
+.main-nav .bg-purple:hover  {background: #e993c9;}
+.main-nav .bg-yellow:hover {background: #ffd777;}
+.main-nav .bg-green:hover {background: #c4eaa0;}
+.main-nav .bg-blue:hover {background: #9de4e7;}
+
 /******************** FEATURE SLIDER ********************/
 .feature-slider {
   background: white;
