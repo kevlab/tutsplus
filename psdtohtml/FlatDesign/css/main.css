@@ -10,6 +10,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+.main-content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
 /******************** HEADER ********************/
 header {
   text-align: center;
@@ -24,4 +29,48 @@ header {
 .main-title span {
   font-size: 24px;
   letter-spacing: 5px;
+}
+
+/******************** NAVIGATION ********************/
+.main-nav {
+  background: #cdcdcd;
+  width: 100%;
+}
+
+.main-nav ul {
+  /*background: red;*/
+  list-style: none;
+  padding: 0;
+  width: 1000px;
+  height: 70px;
+  margin: 0 auto;
+  text-align: left;
+
+/*left edge of feature slider should be flush with left edge of HOME button rather than with the left border of the home button*/
+  position: relative;
+  left: -4px;
+}
+
+.main-nav li {
+  /*background: red;*/
+
+  /*to get the same color at the background in between; if we used margin-left we would get the color of the nav*/
+  border-left: 4px solid #dfdfdf;
+
+  float: left;
+  height: 70px;
+  width: 140px;
+}
+
+.main-nav li:last-child {
+  border-right: 4px solid #dfdfdf;
+}
+
+.main-nav a {
+  text-decoration: none;
+}
+
+/******************** FEATURE SLIDER ********************/
+.feature-slider {
+  background: white;
 }
