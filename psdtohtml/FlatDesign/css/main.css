@@ -39,6 +39,19 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav .bg-green:hover {background: #c4eaa0;}
 .main-nav .bg-blue:hover {background: #9de4e7;}
 
+.clear {
+  clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
 
 /******************** HEADER ********************/
 header {
@@ -208,3 +221,43 @@ header {
   color: #f26c4e;
   margin-bottom: 0;
 }
+
+/******************** FEATURE SERVICES ********************/
+.feature-services {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+.column-half {
+  display: inline;
+  float: left;
+  margin: 0px;
+  width: 500px;
+  height: 460px;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.feature-services .column-half p {
+  color: #fff;
+  text-align: left;
+}
+
+.feature-services .column-half h2 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+}
+
+.feature-services .column-half p a {
+  font-weight: bold;
+  color: #fff;
+}
+
+.feature-services .column-half p a:hover {
+  color: #e7ffbc;
+}
+
+
