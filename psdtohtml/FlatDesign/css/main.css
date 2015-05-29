@@ -17,6 +17,29 @@ h1, h2, h3, h4, h5, h6 {
 .bg-blue {background: #78ccd0;}
 .bg-dark-green {background: #8ebe5f;}
 
+.btn {
+  border: none;
+  display: inline-block; /*can't set width and height of inline element like anchor tags*/
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.main-nav .bg-orange, .main-nav .bg-purple, .main-nav .bg-yellow,
+.main-nav .bg-green, .main-nav .bg-blue, .btn {
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+.main-nav .bg-orange:hover, .btn.bg-orange:hover {background: #fd8a70;}
+.main-nav .bg-purple:hover  {background: #e993c9;}
+.main-nav .bg-yellow:hover {background: #ffd777;}
+.main-nav .bg-green:hover {background: #c4eaa0;}
+.main-nav .bg-blue:hover {background: #9de4e7;}
+
+
 /******************** HEADER ********************/
 header {
   text-align: center;
@@ -108,18 +131,6 @@ header {
   height: 10px;
 }
 
-.main-nav .bg-orange, .main-nav .bg-purple, .main-nav .bg-yellow,
-.main-nav .bg-green, .main-nav .bg-blue {
-  -webkit-transition: background .5s;
-  transition: background .5s;
-}
-
-.main-nav .bg-orange:hover {background: #fd8a70;}
-.main-nav .bg-purple:hover  {background: #e993c9;}
-.main-nav .bg-yellow:hover {background: #ffd777;}
-.main-nav .bg-green:hover {background: #c4eaa0;}
-.main-nav .bg-blue:hover {background: #9de4e7;}
-
 /******************** FEATURE SLIDER ********************/
 .main-content {
   width: 1000px;
@@ -130,6 +141,7 @@ header {
   background: white;
   position: relative;
   height: 320px;
+  margin-top: 4px;
 }
 
 .nav-left, .nav-right {
@@ -157,6 +169,7 @@ header {
   left: 10px;
   bottom: 10px;
   height: 10px;
+  margin: 0;
 }
 
 .slider-nav li {
@@ -168,12 +181,30 @@ header {
   margin-right: 10px;
 }
 
-.slider-nav .active {
+.slider-nav li.active {
   background: #f26c4e;
 }
 
-.slider-nav a {
+.slider-nav li a {
   position: absolute;
   width: 10px;
   height: 10px;
+}
+
+.slide-image {
+  position: absolute;
+  bottom: 0;
+  right: 90px;
+}
+
+.slide-text {
+  width: 310px;
+  margin: 40px 0 0 90px;
+  float: left;
+}
+
+.slide-text h2 {
+  font-family: 'Sintony', Helvetica, sans-serif;
+  color: #f26c4e;
+  margin-bottom: 0;
 }
