@@ -10,11 +10,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-.main-content {
-  width: 1000px;
-  margin: 0 auto;
-}
-
 .bg-orange {background: #f26c4e;}
 .bg-purple  {background: #cf6baa;}
 .bg-yellow {background: #f2c24d;}
@@ -38,7 +33,7 @@ header {
   letter-spacing: 5px;
 }
 
-/******************** NAVIGATION ********************/
+/******************** MAIN NAVIGATION ********************/
 .main-nav {
   background: #cdcdcd;
   width: 100%;
@@ -126,6 +121,59 @@ header {
 .main-nav .bg-blue:hover {background: #9de4e7;}
 
 /******************** FEATURE SLIDER ********************/
+.main-content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
 .feature-slider {
   background: white;
+  position: relative;
+  height: 320px;
+}
+
+.nav-left, .nav-right {
+  position: absolute;
+  width: 53px;
+  height: 53px;
+  top: 131px;
+}
+
+.nav-left {
+  background: url(../img/slider-left.png) no-repeat;
+  left: -10px;
+}
+
+.nav-right {
+  background: url(../img/slider-right.png) no-repeat;
+  right: -10px;
+
+}
+
+.slider-nav {
+  list-style: none;
+  padding-left: 0;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  height: 10px;
+}
+
+.slider-nav li {
+  background: #cdcdcd;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 10px;
+}
+
+.slider-nav .active {
+  background: #f26c4e;
+}
+
+.slider-nav a {
+  position: absolute;
+  width: 10px;
+  height: 10px;
 }
