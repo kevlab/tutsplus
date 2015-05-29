@@ -227,7 +227,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 1000px;
-  /*overflow: hidden;*/
+  /*overflow: hidden; ALT TO GET LAYOUT OF SAME HEIGHT WITHOUT FIXING THE HEIGHT TO 440PX*/
 }
 
 .column-half {
@@ -235,12 +235,12 @@ header {
   float: left;
   margin: 0px;
   width: 500px;
-  height: 440px; /*100%*/
+  height: 440px; /*100% ALT*/
   padding: 40px;
   box-sizing: border-box;
   text-align: center;
   /*padding-bottom:9999px;
-  margin-bottom:-9999px;*/
+  margin-bottom:-9999px; ALT*/
 }
 
 .feature-services .column-half p {
@@ -278,4 +278,29 @@ footer {
   width: 333.33px;
   padding: 20px;
   box-sizing: border-box;
+}
+
+.blog-list {
+  color: #8ebe5f;
+  padding-left: 16px;
+}
+
+.blog-list a {
+  color: #78ccb0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.blog-list a:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-list li {
+  float: left;
+  margin-right: 10px;
 }
