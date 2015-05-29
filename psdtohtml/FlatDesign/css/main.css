@@ -88,6 +88,31 @@ header {
   position: absolute;
 }
 
+/*little red dots in between*/
+.main-nav li a:before {
+  content: ' ';
+  background: #f26c4e;
+  border: 3px solid #dfdfdf; /*same color as background*/
+  border-radius: 10px;
+  position: absolute;
+  left: -10px;
+  top: 27px; /*number found by trial and error*/
+  width: 10px;
+  height: 10px;
+}
+
+.main-nav li:last-child a:after {
+  content: ' ';
+  background: #f26c4e;
+  border: 3px solid #dfdfdf; /*same color as background*/
+  border-radius: 10px;
+  position: absolute;
+  right: -10px;
+  top: 27px; /*number found by trial and error*/
+  width: 10px;
+  height: 10px;
+}
+
 .main-nav .bg-orange, .main-nav .bg-purple, .main-nav .bg-yellow,
 .main-nav .bg-green, .main-nav .bg-blue {
   -webkit-transition: background .5s;
