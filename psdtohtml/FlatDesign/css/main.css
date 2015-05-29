@@ -260,4 +260,19 @@ header {
   color: #e7ffbc;
 }
 
+/******************** FOOTER ********************/
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  background: #ededed;
+}
 
+.column-one-third {
+  display: inline;
+  float: left;
+  margin: 0px;
+  width: 333.33px;
+  padding: 20px;
+  box-sizing: border-box;
+}
