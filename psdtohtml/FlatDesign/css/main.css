@@ -304,3 +304,25 @@ footer {
   float: left;
   margin-right: 10px;
 }
+
+.column-registration {
+  background: #f26c4e;
+}
+
+.column-registration h2 {
+  color: white;
+}
+
+.column-registration input {
+  border: none;
+  padding: 10px;
+  box-sizing: border-box; /*so we can add padding*/
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.column-registration .btn {
+  width: 100%;
+  background: #f2c24b;
+  margin-bottom: 40px;
+}
