@@ -13,3 +13,18 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Alegreya Sans', sans-serif;
 }
+
+/***************** MAIN NAV ************************/
+nav {
+  background: #dadada;
+  height: 40px;
+}
+
+.nav-list, .social-list {
+  list-style: none;
+
+}
+
+.nav-list li, .social-list li {
+  float: left;
+}
