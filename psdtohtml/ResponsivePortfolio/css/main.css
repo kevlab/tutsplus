@@ -55,3 +55,20 @@ nav {
 .social-list li {
   margin-left: 20px;
 }
+
+/***************** HEADER ************************/
+header h1, header h3 {
+  font-weight: normal;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 44px;
+  margin-top: 20px;
+}
+
+header h3 {
+  color: #e46965;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
