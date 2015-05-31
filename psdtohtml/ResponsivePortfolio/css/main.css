@@ -86,7 +86,7 @@ header h3 {
 }
 
 .feature-list {
-  background: url('../img/feature-bg.jpg') no-repeat;
+  background: url('../img/feature-bg.jpg') top center no-repeat;
   list-style: none;
   height: 300px;
 }
