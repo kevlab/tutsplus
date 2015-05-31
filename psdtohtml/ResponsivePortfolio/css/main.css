@@ -79,3 +79,14 @@ header h3 {
   font-size: 20px;
   margin-bottom: 20px;
 }
+
+/***************** FEATURE ************************/
+.feature {
+  background: #363636;
+}
+
+.feature-list {
+  background: url('../img/feature-bg.jpg') no-repeat;
+  list-style: none;
+  height: 300px;
+}
