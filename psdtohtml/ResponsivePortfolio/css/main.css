@@ -44,8 +44,14 @@ nav {
 
 .nav-list {
   padding-top: 10px;
+  float: left;
 }
 
 .social-list {
+  margin-top: 5px;
   float: right;
+}
+
+.social-list li {
+  margin-left: 20px;
 }
