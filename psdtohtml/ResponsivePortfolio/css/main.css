@@ -19,6 +19,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+h2 {
+  color: #e46965;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 15px 0;
+}
+
 /***************** MAIN NAV ************************/
 nav {
   background: #dadada;
