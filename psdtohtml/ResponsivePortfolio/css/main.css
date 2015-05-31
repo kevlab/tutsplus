@@ -90,3 +90,34 @@ header h3 {
   list-style: none;
   height: 300px;
 }
+
+.feature-list li {
+  box-sizing: border-box;
+  width: 33.3333%;
+  height: 300px;
+  float: left;
+  border-left: 1px solid white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.feature-list li:last-child {
+  border-right: 1px solid white;
+}
+
+.feature-list li a {
+  text-decoration: none;
+}
+
+.feature-title {
+  color: white;
+  opacity: .5;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 5px;
+  transition: opacity .5s;
+}
+
+.feature-title:hover {
+  opacity: 1;
+}
