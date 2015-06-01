@@ -26,6 +26,19 @@ h2 {
   margin: 15px 0;
 }
 
+.clear {
+  clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
 /***************** MAIN NAV ************************/
 nav {
   background: #dadada;
@@ -86,7 +99,7 @@ header h3 {
 }
 
 .feature-list {
-  background: url('../img/feature-bg.jpg') top center no-repeat;
+  background: url('../img/feature-bg.jpg') no-repeat center top;
   list-style: none;
   height: 300px;
 }
@@ -121,3 +134,30 @@ header h3 {
 .feature-title:hover {
   opacity: 1;
 }
+
+/***************** PORTFOLIO ************************/
+.portfolio-samples {
+  background: #dadada;
+  padding: 5px 0 20px 0;
+}
+
+.portfolio-list {
+  list-style: none;
+}
+
+.portfolio-list li {
+  background: #555;
+  width: 210px;
+  height: 210px;
+  margin-right: 20px;
+  float: left;
+}
+
+.portfolio-list li:last-child {
+  margin-right: 0;
+}
+
+li.port-laptops {background: url('../img/laptops.jpg') no-repeat center center;}
+li.port-acme {background: url('../img/acmelogo.gif') no-repeat -200px -60px;}
+li.port-demoreel {background: url('../img/tablet.jpg') no-repeat center center;}
+li.port-logo {background: url('../img/alogo.gif') no-repeat center center;}
