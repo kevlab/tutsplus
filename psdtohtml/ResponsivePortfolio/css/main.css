@@ -45,6 +45,10 @@ nav {
   height: 40px;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .nav-list, .social-list {
   list-style: none;
 }
@@ -291,9 +295,40 @@ footer .copyright {
 }
 
 @media (max-width: 640px) {
+
+  .menu-icon {
+    display: block;
+    padding-top: 6px;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    display: none;
+    background: #aaa;
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    position: relative;
+    left: -10px;
+    padding-bottom: 0;
+  }
+
+  .nav-list li {
+    display: block;
+    float: none;
+    margin-bottom: 10px;
+  }
+
+  .social-list {
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+
   .portfolio-list li {
     float: none;
     width: 100%;
     margin-bottom: 10px;
   }
+
 }
