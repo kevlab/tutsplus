@@ -331,4 +331,36 @@ footer .copyright {
     margin-bottom: 10px;
   }
 
+  .feature-list {
+    background: none;
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+
+  .feature-list li {
+    background-image: url('../img/feature-bg.jpg');
+    float: none;
+    height: 120px;
+    border-right: none !important;
+    border-left: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+  }
+
+  .feature-icon {
+    float: left;
+    margin: 28px 20px 0 10px;
+  }
+
+  .feature-title {
+    line-height: 120px; /*to center vettically*/
+    margin-top: 0;
+  }
+
+  .feature-web {background-position: left top;}
+  .feature-graphic {background-position: center bottom;}
+  .feature-video {background-position: right center;}
 }
