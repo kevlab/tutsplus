@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <title>Responsive Portfolio</title>
 </head>
 <body>
@@ -114,5 +115,24 @@
     </div><!--close container-->
     <span class="copyright">&copy;copyright 2015, My Portfolio Design</span>
   </footer>
+
+  <script>
+    $(function () {
+      $nav = $('.nav-list');
+
+      $('.menu-icon').click(function() {
+        $nav.slideToggle();
+      });
+
+      $(window).resize(function() {
+        if ($(window).width() >= 640) {
+          $nav.show();
+        } else {
+          $nav.hide();
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
