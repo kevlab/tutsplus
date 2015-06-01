@@ -191,6 +191,7 @@ footer {
   background: #252525;
   color: #9D9D9D;
   padding: 20px 0 60px 0;
+  position: relative;
 }
 
 footer h3 {
@@ -251,4 +252,15 @@ footer .registration button {
   box-sizing: border-box;
   padding: 10px;
   cursor: pointer;
+}
+
+footer .copyright {
+  display: block; /*span is inline*/
+  width: 100%;
+  background: black;
+  color: #555;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
 }
