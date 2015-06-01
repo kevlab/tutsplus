@@ -363,4 +363,9 @@ footer .copyright {
   .feature-web {background-position: left top;}
   .feature-graphic {background-position: center bottom;}
   .feature-video {background-position: right center;}
+
+  .col-one-third {
+    float: none;
+    width: 100%;
+  }
 }
