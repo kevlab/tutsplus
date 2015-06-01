@@ -138,7 +138,8 @@ header h3 {
 /***************** PORTFOLIO ************************/
 .portfolio-samples {
   background: #dadada;
-  padding: 5px 0 20px 0;
+  padding: 2px 0 15px 0;
+  margin-top: 15px;
 }
 
 .portfolio-list {
@@ -151,6 +152,7 @@ header h3 {
   height: 210px;
   margin-right: 20px;
   float: left;
+  position: relative;
 }
 
 .portfolio-list li:last-child {
@@ -161,3 +163,25 @@ li.port-laptops {background: url('../img/laptops.jpg') no-repeat center center;}
 li.port-acme {background: url('../img/acmelogo.gif') no-repeat -200px -60px;}
 li.port-demoreel {background: url('../img/tablet.jpg') no-repeat center center;}
 li.port-logo {background: url('../img/alogo.gif') no-repeat center center;}
+
+.portfolio-list li span {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 210px;
+  height: 52px;
+  background: rgba(0, 0, 0, .5);
+  padding: 7px;
+}
+
+.portfolio-list a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 105px;
+  float: left;
+}
+
+.sample-icon {
+  float: right;
+}
