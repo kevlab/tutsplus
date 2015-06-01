@@ -139,7 +139,7 @@ header h3 {
 .portfolio-samples {
   background: #dadada;
   padding: 2px 0 15px 0;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .portfolio-list {
@@ -184,4 +184,23 @@ li.port-logo {background: url('../img/alogo.gif') no-repeat center center;}
 
 .sample-icon {
   float: right;
+}
+
+/***************** FOOTER ************************/
+footer {
+  background: #252525;
+  color: #9D9D9D;
+  padding: 20px 0 60px 0;
+}
+
+footer h3 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #e46965;
+  margin: 10px 0;
+}
+
+.col-one-third {
+  width: 33.3333%;
+  float: left;
 }
