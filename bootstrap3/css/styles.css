@@ -5,3 +5,11 @@
     orange: #E27A3F;
     red: #DF4949;
 */
+
+h1, h2, h3, h4 {
+  font-family: 'Lora', serif;
+}
+
+.jumbotron h1 {
+  font-size: 60px;
+}
