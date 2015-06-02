@@ -6,8 +6,12 @@
     red: #DF4949;
 */
 
-h1, h2, h3, h4 {
+h1, h2 {
   font-family: 'Lora', serif;
+}
+
+h4 {
+  color: #DF4949;
 }
 
 body {
@@ -20,11 +24,11 @@ body {
 }
 
 .btn-success {
-    background-color: #45B29D;
+    background-color: #DF4949;
     border: none;
 }
 .btn-success:hover {
-    background-color: #4EC9B2;
+    background-color: #BA3D3D;
     border: none;
 }
 .navbar-custom {
