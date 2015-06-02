@@ -10,21 +10,37 @@ h1, h2, h3, h4 {
   font-family: 'Lora', serif;
 }
 
-.jumbotron h1 {
-  font-size: 60px;
-}
-
 body {
   color: #444;
   padding-top: 70px;
   }
 
-.btn-success {
-  background: orange;
-  border: none;
+.jumbotron h1 {
+  font-size: 60px;
 }
 
+.btn-success {
+    background-color: #45B29D;
+    border: none;
+}
 .btn-success:hover {
-  background: red;
-  border: none;
+    background-color: #4EC9B2;
+    border: none;
+}
+.navbar-custom {
+    background-color: #334D5C;
+    /*color: white;*/
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ddd;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #334D5C;
 }
