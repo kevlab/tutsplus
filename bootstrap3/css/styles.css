@@ -27,22 +27,38 @@ body {
     background-color: #DF4949;
     border: none;
 }
+
 .btn-success:hover {
     background-color: #BA3D3D;
     border: none;
 }
+
+.btn-info {
+    background-color: #45B29D;
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #389180;
+    border: none;
+}
+
+
 .navbar-custom {
     background-color: #334D5C;
     /*color: white;*/
 }
+
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav>li>a {
     color: white;
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav>li>a:hover {
     color: #ddd;
 }
+
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
