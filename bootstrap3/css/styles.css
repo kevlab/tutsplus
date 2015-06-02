@@ -14,4 +14,17 @@ h1, h2, h3, h4 {
   font-size: 60px;
 }
 
-body { padding-top: 70px; }
+body {
+  color: #444;
+  padding-top: 70px;
+  }
+
+.btn-success {
+  background: orange;
+  border: none;
+}
+
+.btn-success:hover {
+  background: red;
+  border: none;
+}
