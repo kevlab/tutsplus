@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title>eCommerce - Homes</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,7 +19,71 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <p>Hello world! This is HTML5 Boilerplate.</p>
+    <div id="wrapper">
+      <header>
+        <section id="top-area">
+          <p>Phone orders: 1-800-000 | Email us: <a href="mailto:office@shop.com">office@shop.com</a></p>
+        </section><!--end top-area-->
+        <section id="action-bar">
+          <div id="logo">
+            <a href="#"><span id="logo-accent">e</span>Commerce</a>
+          </div><!--end logo-->
+
+          <nav class="dropdown">
+            <ul>
+              <li>
+                <a href="">Shop by Category <img src="img/down-arrow.gif" alt="shop by category"></a>
+                <ul>
+                  <li><a href="#">Laptops</a></li>
+                  <li><a href="#">Desktop PC</a></li>
+                  <li><a href="#">Smartphones</a></li>
+                  <li><a href="#">Tablets</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <div id="search-form">
+            <form action="#" method="get">
+              <input type="search" name="search" placehoder="Search by keyword" class="search">
+              <input type="submit" value="search" class="search submit">
+            </form>
+          </div><!--end search-form-->
+
+          <div id="user-menu">
+            <!--
+            <nav id="sign-in" class="dropdown">
+              <ul>
+                <li>
+                  <a href=""><img src="img/user-icon.gif" alt="Sign in">Sign in <img src="img/down-arrow.gif" alt="sign in"></a>
+                  <ul>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Sign up</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>-->
+
+            <nav class="dropdown">
+              <ul>
+                <li>
+                  <a href=""><img src="img/user-icon.gif" alt="John Doe">John Doe <img src="img/down-arrow.gif" alt="John Doe"></a>
+                  <ul>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Wish list</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div><!--end user-menu-->
+
+          <div id="view-cart">
+            <a href="#"><img src="img/blue-cart.gif" alt="view cart"> View Cart</a>
+          </div><!--end view-cart-->
+        </section><!--end action-bar-->
+      </header>
+    </div><!--end wrapper-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
