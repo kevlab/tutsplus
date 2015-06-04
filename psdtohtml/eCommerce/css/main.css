@@ -221,6 +221,10 @@ header a:link, header a:visited {
   background-color: #f6f6f6;
 }
 
+#action-bar #sign-in li:hover ul {
+  width: 115px;
+}
+
 #action-bar #view-cart {
   float: left;
 }
