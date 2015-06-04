@@ -486,6 +486,7 @@ header a:link, header a:visited {
 
 #listings .product {
   margin-bottom: 30px;
+  margin-right: 100px;
 }
 
 .product .instock {
