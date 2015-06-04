@@ -43,7 +43,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1em 0;
+  margin: 0; /*edited to 0 by me !!!*/
   padding: 0;
 }
 
@@ -94,23 +94,141 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+p, h1, h2, h3, h4, h5, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
 
+/*********************WRAPPER*********************/
+#wrapper {
+  width: 1152px;
+  margin: 0 auto;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
 
+/*********************HEADER*********************/
+header {
+  background: white;
+}
 
+header a:link, header a:visited {
+  color: #5daad0;
+  text-decoration: none;
+}
 
+#top-area {
+  height: 50px;
+  background: #f6f6f6;
+  padding: 0 30px;
+  line-height: 50px;
+}
 
+#action-bar {
+  height: 55px;
+  padding: 35px 0 0 30px;
+  vertical-align: middle;
+}
 
+#action-bar a:link, #action-bar a:visited {
+  color: black;
+}
 
+#action-bar #logo-accent {
+  color: #5daad0;
+}
 
+#action-bar #logo {
+  float: left;
+  margin-right: 100px;
+  font-size: 20px;
+}
 
+#action-bar .dropdown {
+  float: left;
+  padding-right: 25px;
+  margin-right: 25px;
+  border-right: 1px dotted #aaa;
+}
 
+#action-bar .dropdown ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+#action-bar .dropdown ul li {
+  display: block;
+  position: relative;
+  float: left;
+}
 
+#action-bar .dropdown ul li ul {
+  display: none;
+}
 
+#action-bar .dropdown ul li a {
+  display: block;
+  text-decoration: none;
+  color: #5daad0;
+  background: white;
+  margin-left: 1px;
+  white-space: nowrap;
+  padding-left: 10px;
+}
 
+#action-bar .dropdown ul li ul li a:link,
+#action-bar .dropdown ul li ul li a:visited {
+  color: black;
+}
 
+#action-bar .dropdown ul li ul li a:hover {
+  color: #aaa;
+}
 
+#action-bar .dropdown ul li:hover ul {
+  display: block;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #c3c3c3;
+  padding: 5px;
+  width: 160px;
+  border-radius: 5px;
+  background: white;
+}
 
+#action-bar .dropdown ul li:hover ul li {
+  float: none;
+  background: white;
+}
+
+#action-bar #search-form {
+  float: left;
+  padding-right: 25px;
+  margin-right: 10px;
+  border-right: 1px dotted #c3c3c3;
+}
+
+#action-bar #search-form .search {
+  border-right: 1px solid #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#action-bar #search-form .submit {
+  background: #f6f6f6;
+}
+
+#action-bar #view-cart {
+  float: left;
+}
+
+#action-bar #view-cart a:link,
+#action-bar #view-cart a:visited {
+  color: #5daad0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
