@@ -111,7 +111,7 @@ p, h1, h2, h3, h4, h5, ul, li {
 
 /*********************HEADER*********************/
 header {
-  background: white;
+  background-color: white;
 }
 
 header a:link, header a:visited {
@@ -121,7 +121,7 @@ header a:link, header a:visited {
 
 #top-area {
   height: 50px;
-  background: #f6f6f6;
+  background-color: #f6f6f6;
   padding: 0 30px;
   line-height: 50px;
 }
@@ -173,7 +173,7 @@ header a:link, header a:visited {
   display: block;
   text-decoration: none;
   color: #5daad0;
-  background: white;
+  background-color: white;
   margin-left: 1px;
   white-space: nowrap;
   padding-left: 10px;
@@ -196,12 +196,12 @@ header a:link, header a:visited {
   padding: 5px;
   width: 160px;
   border-radius: 5px;
-  background: white;
+  background-color: white;
 }
 
 #action-bar .dropdown ul li:hover ul li {
   float: none;
-  background: white;
+  background-color: white;
 }
 
 #action-bar #search-form {
@@ -218,7 +218,7 @@ header a:link, header a:visited {
 }
 
 #action-bar #search-form .submit {
-  background: #f6f6f6;
+  background-color: #f6f6f6;
 }
 
 #action-bar #view-cart {
@@ -229,6 +229,37 @@ header a:link, header a:visited {
 #action-bar #view-cart a:visited {
   color: #5daad0;
 }
+
+/*********************PROMO*********************/
+#promo {
+  height: 400px;
+  padding: 0 30px;
+  background-color: #172832;
+}
+
+#promo-details {
+  float: left;
+}
+
+#promo img {
+  float: right;
+}
+
+#promo h1 {
+  color: white;
+  font-size: 34px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#promo p {
+  color: #5daad0;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+/*********************MAIN*********************/
+/*********************FOOTER*********************/
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
