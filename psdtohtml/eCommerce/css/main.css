@@ -693,6 +693,28 @@ footer #connect ul li.fb {
   font-weight: normal;
 }
 
+/*********************SEARCH*********************/
+#search-keyword {
+  padding: 30px 0 30px 30px;
+}
+
+#search-keyword h1 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+#search-keyword h1 span {
+  font-weight: bold;
+}
+
+#search-results {
+  text-align: left;
+}
+
+#search-results .product {
+  margin-bottom: 30px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
