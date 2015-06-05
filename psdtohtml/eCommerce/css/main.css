@@ -334,7 +334,6 @@ header a:link, header a:visited {
 
 #promo2 a img {
   position: inherit; /*override previous rule for the little chevron*/
-  margin-left: 4px;
 }
 
 #promo3 {
