@@ -412,6 +412,15 @@ header a:link, header a:visited {
   z-index: 2;
 }
 
+.secondary-cart-btn {
+  background-color: #5daad0;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 0px #467f9c;
+  border: none;
+}
+
 /*********************MAIN*********************/
 #main-content {
   padding: 20px 0 0 30px;
@@ -621,6 +630,67 @@ footer #connect ul li.twitter {
 
 footer #connect ul li.fb {
   list-style-image: url(../img/fb.gif);
+}
+
+/*********************PRODUCT*********************/
+#product-image, #product-details, #product-info {
+  float: left;
+  margin: 20px 0;
+}
+
+#product-image {
+  width: 45%;
+}
+
+#product-details {
+  width: 30%;
+}
+
+#product-details h1 {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+#product-details input {
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 20px;
+}
+
+#product-details button {
+  margin-bottom: 10px;
+}
+
+#product-details a:link, #product-details a:visited {
+  color: #5eaad0;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+#product-info {
+  width: 20%;
+  margin-top: 90px;
+  margin-left: 40px;
+}
+
+#product-info p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#product-info p.price {
+  text-align: center;
+  width: 100px;
+  padding: 20px;
+  background-color: #f6f6f6;
+  border: 1px solid #eee;
+}
+
+#product-info p span {
+  font-weight: normal;
 }
 
 /* ==========================================================================
