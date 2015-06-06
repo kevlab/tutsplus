@@ -74,6 +74,42 @@ p {
   font-size: 32px;
 }
 
+.portfolio-style {
+  padding: 10px 15px 10px 0;
+  font-weight: bold;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  background: #111;
+  color: #f5f5f5;
+}
+
+.nav-pills a {
+  color: #f5f5f5;
+  margin-bottom: 1rem;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+  background: none ;
+}
+
+.portfolio-item {
+  margin-bottom: 1rem;
+}
+
+.portfolio-item img {
+  filter: grayscale(100%);
+  border-radius: 5px;
+}
+
+.portfolio-item:hover img {
+  filter: grayscale(50%);
+}
+
+.filterable-portfolio {
+  margin-bottom: 3rem;
+}
+
 @media (max-width: 768px) {
   .navbar-nav>li>a:after {
     content: '';
