@@ -788,6 +788,35 @@ footer #connect ul li.fb {
   margin-bottom: 50px;
 }
 
+/*********************CONTACT*********************/
+#contact-us {
+  width: 400px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  color: #2e373f;
+}
+
+#contact-us h1 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+#contact-us p span {
+  font-weight: bold;
+}
+
+#contact-us a:link, #contact-us a:visited {
+  color: #5daad0;
+  text-decoration: none;
+}
+
+.note {
+  font-size: 12px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
