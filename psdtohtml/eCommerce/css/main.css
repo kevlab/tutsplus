@@ -715,6 +715,42 @@ footer #connect ul li.fb {
   margin-bottom: 30px;
 }
 
+/*********************NEW ACCOUNT*********************/
+#new-account {
+  width: 400px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  color: #2e373f;
+}
+
+#new-account h1 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+#new-account label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#new-account p {
+  font-size: 12px;
+}
+
+#new-account p input {
+  width: 300px;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#new-account .required {
+  color: #5daad0;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
