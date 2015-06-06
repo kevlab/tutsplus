@@ -728,7 +728,7 @@ footer #connect ul li.fb {
   margin-bottom: 30px;
 }
 
-/*********************NEW ACCOUNT*********************/
+/*********************NEW ACCOUNT & PERSONAL DETAILS*********************/
 #new-account {
   width: 400px;
   margin: 0 auto 30px auto;
@@ -738,29 +738,34 @@ footer #connect ul li.fb {
   color: #2e373f;
 }
 
-#new-account h1 {
+#new-account h1,
+#personal-details h1 {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 15px;
 }
 
-#new-account label {
+#new-account label,
+#personal-details label {
   display: block;
   margin-bottom: 5px;
 }
 
-#new-account p {
+#new-account p,
+#personal-details p {
   font-size: 12px;
 }
 
-#new-account p input {
+#new-account p input,
+#personal-details p input {
   width: 300px;
   border: 1px solid #eee;
   padding: 10px;
   border-radius: 10px;
 }
 
-#new-account .required {
+#new-account .required,
+#personal-details .required {
   color: #5daad0;
 }
 
@@ -830,9 +835,10 @@ footer #connect ul li.fb {
   font-size: 12px;
 }
 
-/*********************ORDER DETAILS & ORDER HISTORY*********************/
+/*********************ORDER DETAILS & ORDER HISTORY & PERSONAL DETAILS*********************/
 #order-details,
-#order-history {
+#order-history,
+#personal-details {
   text-align: left;
   width: 900px;
   float: right;
@@ -881,6 +887,11 @@ footer #connect ul li.fb {
 #order-details table td,
 #order-history table td {
   padding: 10px;
+}
+
+#order-history a:link, #order-history a:visited {
+  color: #5daad0;
+  text-decoration: none;
 }
 
 .total {
