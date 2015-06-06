@@ -751,6 +751,43 @@ footer #connect ul li.fb {
   color: #5daad0;
 }
 
+/*********************SIGNIN*********************/
+#signin-form, #signup {
+  text-align: center;
+  padding: 10px 0 30px 0;
+  color: #2e373f;
+  position: relative;
+}
+
+#signin-form {
+  background-color: #f6f6f6;
+}
+
+#signin-form h1, #signup h2 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+#signin-form form img {
+  position: relative;
+  left: 25px;
+}
+
+#signin-form input {
+  width: 300px;
+  padding: 10px 10px 10px 30px;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  color: #c3c3c3;
+}
+#signup h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
