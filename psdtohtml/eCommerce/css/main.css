@@ -830,8 +830,9 @@ footer #connect ul li.fb {
   font-size: 12px;
 }
 
-/*********************ORDER DETAILS*********************/
-#order-details{
+/*********************ORDER DETAILS & ORDER HISTORY*********************/
+#order-details,
+#order-history {
   text-align: left;
   width: 900px;
   float: right;
@@ -839,14 +840,18 @@ footer #connect ul li.fb {
   padding-left: 20px;
 }
 
-#order-details h1, #order-details h2 {
+#order-history {
+  margin-bottom: 0;
+}
+
+#order-details h1, #order-details h2, #order-history h1 {
   color: #2e373f;
   font-weight: normal;
   margin-bottom: 20px;
   width: 840px;
 }
 
-#order-details h1 {
+#order-details h1, #order-history h1 {
   font-size: 24px;
 }
 
@@ -861,17 +866,20 @@ footer #connect ul li.fb {
   margin-left: 50px;
 }
 
-#order-details table {
+#order-details table,
+#order-history table {
   color: #5f5e5e;
   width: 870px;
   margin-bottom: 40px;
 }
 
-#order-details table th {
+#order-details table th,
+#order-history table th {
   padding: 20px;
 }
 
-#order-details table td {
+#order-details table td,
+#order-history table td {
   padding: 10px;
 }
 
@@ -881,6 +889,18 @@ footer #connect ul li.fb {
 
 .total {
   font-weight: bold;
+}
+
+.finalized {
+  color: #9dbb6f;
+}
+
+.pending {
+  color: #ed7840;
+}
+
+.aborted {
+  color: #de310f;
 }
 
 /* ==========================================================================
