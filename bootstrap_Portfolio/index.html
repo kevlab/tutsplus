@@ -60,44 +60,54 @@
     <div class="container-fluid filterable-portfolio">
       <div class="row">
         <div class="col-md-12">
-          <ul class="nav nav-pills">
+          <ul class="nav nav-pills portfolio-filter">
           <li class="portfolio-style">Filter by:</li>
-            <li role="presentation" class="active"><a href="#">All</a></li>
-            <li role="presentation"><a href="#">Animation</a></li>
-            <li role="presentation"><a href="#">Design</a></li>
-            <li role="presentation"><a href="#">Photography</a></li>
-            <li role="presentation"><a href="#">Web</a></li>
+            <li role="presentation" class="active">
+              <a href="#" data-filter="*">All</a>
+            </li>
+            <li role="presentation">
+              <a href="#" data-filter=".animation">Animation</a>
+            </li>
+            <li role="presentation">
+              <a href="#" data-filter=".design">Design</a>
+            </li>
+            <li role="presentation">
+              <a href="#" data-filter=".photography">Photography</a>
+            </li>
+            <li role="presentation">
+              <a href="#" data-filter=".web">Web</a>
+            </li>
           </ul>
         </div>
       </div>
 
       <div class="row portfolio-items">
-        <figure class="portfolio-item col-sm-4">
+        <figure class="portfolio-item col-sm-4 animation">
           <a href="#">
             <img src="http://placekitten.com/702/400" alt="" class="img-responsive">
           </a>
         </figure>
-        <figure class="portfolio-item col-sm-4">
+        <figure class="portfolio-item col-sm-4 photography design">
           <a href="#">
             <img src="http://placekitten.com/701/400" alt="" class="img-responsive">
           </a>
         </figure>
-        <figure class="portfolio-item col-sm-4">
+        <figure class="portfolio-item col-sm-4 animation photography">
           <a href="#">
             <img src="http://placekitten.com/700/403" alt="" class="img-responsive">
           </a>
         </figure>
-        <figure class="portfolio-item col-sm-4">
+        <figure class="portfolio-item col-sm-4 photography web">
           <a href="#">
             <img src="http://placekitten.com/702/401" alt="" class="img-responsive">
           </a>
         </figure>
-        <figure class="portfolio-item col-sm-4">
+        <figure class="portfolio-item col-sm-4 photography">
           <a href="#">
             <img src="http://placekitten.com/701/402" alt="" class="img-responsive">
           </a>
         </figure>
-        <figure class="portfolio-item col-sm-4">
+        <figure class="portfolio-item col-sm-4 web design">
           <a href="#">
             <img src="http://placekitten.com/703/408" alt="" class="img-responsive">
           </a>
@@ -109,6 +119,7 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
 
     <script src="js/main.js"></script>
 
