@@ -424,7 +424,7 @@ header a:link, header a:visited {
 .tertiary-btn {
   background-color: #f6f6f6;
   color: #5f5e5e;
-  padding: 15px 35px;
+  padding: 10px;
   border-radius: 5px;
   box-shadow: 0px 5px 0px #b8b8b8;
   text-decoration: none;
@@ -835,7 +835,7 @@ footer #connect ul li.fb {
   font-size: 12px;
 }
 
-/*********************ORDER DETAILS & ORDER HISTORY & PERSONAL DETAILS*********************/
+/*********************ORDER DETAILS & ORDER HISTORY & PERSONAL DETAILS  & SHOPPING-CART*********************/
 #order-details,
 #order-history,
 #personal-details {
@@ -850,14 +850,15 @@ footer #connect ul li.fb {
   margin-bottom: 0;
 }
 
-#order-details h1, #order-details h2, #order-history h1 {
+#order-details h1, #order-details h2,
+#order-history h1, #shopping-cart h1 {
   color: #2e373f;
   font-weight: normal;
   margin-bottom: 20px;
   width: 840px;
 }
 
-#order-details h1, #order-history h1 {
+#order-details h1, #order-history h1, #shopping-cart h1 {
   font-size: 24px;
 }
 
@@ -873,20 +874,38 @@ footer #connect ul li.fb {
 }
 
 #order-details table,
-#order-history table {
+#order-history table,
+#shopping-cart table {
   color: #5f5e5e;
   width: 870px;
   margin-bottom: 40px;
 }
 
+#shopping-cart table {
+  width: 1080px;
+}
+
 #order-details table th,
-#order-history table th {
+#order-history table th,
+#shopping-cart table th {
   padding: 20px;
 }
 
 #order-details table td,
-#order-history table td {
+#order-history table td,
+#shopping-cart table td {
   padding: 10px;
+}
+
+#shopping-cart .qty {
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 20px;
+}
+
+#shopping-cart td span {
+  display: block;
 }
 
 #order-history a:link, #order-history a:visited {
