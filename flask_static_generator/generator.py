@@ -33,9 +33,16 @@ class Post:
         self.__dict__.update(yaml.load(content))
 
 
+@app.template_filter('date')  # to pipe the date into the template
 def format_date(value, format='%B %d, %Y'):
     return value.strftime(format)
+# app.jinja_env.filters['date'] = format_date
+# another way to pipe the date in the template
 
+# a thrid way to get the date in the template
+# @app.context_processor
+# def inject_format_date():
+#     return {'format_date': format_date}
 
 @app.route('/')
 def index():
@@ -48,7 +55,7 @@ def post(path):
     # import pdb; pdb.set_trace()  to start python debugger
     path = os.path.join('posts', path + POSTS_FILE_EXTENSION)
     post = Post(path)
-    return render_template('post.html', post=post, format_date=format_date)
+    return render_template('post.html', post=post)
 
 if __name__ == '__main__':
     app.run(port=8000, debug=True)
