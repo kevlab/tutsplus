@@ -9,6 +9,7 @@ app = Flask(__name__)
 
 
 class Post:
+
     def __init__(self, path):
         self.path = path
 
@@ -23,8 +24,11 @@ class Post:
 def index():
     return 'Hello World'
 
+
 @app.route('/blog/<path:path>')
 def post(path):
+    # raise  to start werkzeug debugger where we are in the code
+    # import pdb; pdb.set_trace()  to start python debugger
     path = os.path.join('posts', path + POSTS_FILE_EXTENSION)
     post = Post(path)
     return render_template('post.html', post=post)
