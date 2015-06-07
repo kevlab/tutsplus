@@ -33,6 +33,10 @@ class Post:
         self.__dict__.update(yaml.load(content))
 
 
+def format_date(value, format='%B %d, %Y'):
+    return value.strftime(format)
+
+
 @app.route('/')
 def index():
     return 'Hello World'
@@ -44,7 +48,7 @@ def post(path):
     # import pdb; pdb.set_trace()  to start python debugger
     path = os.path.join('posts', path + POSTS_FILE_EXTENSION)
     post = Post(path)
-    return render_template('post.html', post=post)
+    return render_template('post.html', post=post, format_date=format_date)
 
 if __name__ == '__main__':
     app.run(port=8000, debug=True)
