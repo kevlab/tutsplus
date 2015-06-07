@@ -11,6 +11,7 @@
       <h2> {{ post.subtitle }} </h2>
     {% endif %}
     <h3 id="date">{{ post.date|date('%d-%m-%Y') }}</h3>
+    <!--optional arg in parenthesis after the pipe, if no args to pass then use post.date|date-->
   </div>
 
   <div id="content">
