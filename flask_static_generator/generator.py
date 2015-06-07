@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, abort
 from werkzeug import cached_property
 import markdown
 import os
@@ -6,7 +6,36 @@ import yaml
 
 POSTS_FILE_EXTENSION = '.md'
 
-app = Flask(__name__)
+
+class Blog:
+
+    def __init__(self, app, root_dir='', file_ext=POSTS_FILE_EXTENSION):
+        self.root_dir = root_dir
+        self.file_ext = file_ext
+        self._app = app
+        self._cache = {}
+        self._initialize_cache()
+
+    @property
+    def posts(self):
+        return self._cache.values()
+
+    def get_post_or_404(self, path):
+        """returns the Post object ffor the given pzth or a 404"""
+        try:
+            return self._cache[path]
+        except KeyError:
+            abort(404)
+
+    def _initialize_cache(self):
+        """Walks the root dir and add all posts to the cache"""
+        for (root, dirpaths, filepaths) in os.walk(self.root_dir):
+            for filepath in filepaths:
+                filename, ext = os.path.splitext(filepath)
+                if ext == self.file_ext:
+                    path = os.path.join(root, filepath).replace(self.root_dir, '')
+                    post = Post(path, root_dir=self.root_dir)
+                    self._cache[post.urlpath] = post
 
 
 class Post:
@@ -38,6 +67,10 @@ class Post:
         self.__dict__.update(yaml.load(content))
 
 
+app = Flask(__name__)
+blog = Blog(app, root_dir='posts')
+
+
 @app.template_filter('date')  # to pipe the date into the template
 def format_date(value, format='%B %d, %Y'):
     return value.strftime(format)
@@ -52,15 +85,14 @@ def format_date(value, format='%B %d, %Y'):
 
 @app.route('/')
 def index():
-    posts = [Post('hello.md', root_dir='posts')]
-    return render_template('index.html', posts=posts)
+    return render_template('index.html', posts=blog.posts)
 
 
 @app.route('/blog/<path:path>')
 def post(path):
     # raise  to start werkzeug debugger where we are in the code
     # import pdb; pdb.set_trace()  to start python debugger
-    post = Post(path + POSTS_FILE_EXTENSION, root_dir='posts')
+    post = blog.get_post_or_404(path)
     return render_template('post.html', post=post)
 
 if __name__ == '__main__':
