@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  background: #ecf0f1;
+}
+
+.wrapper {
+  max-width: 60rem;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.gradientbg::before,
+.gradientbg::after {
+  content: " ";
+  display: table;
+}
+
+.gradientbg::after {
+  clear: both;
+}
+
+.gradientbg .sidebar {
+  width: 20%;
+  padding: 1.618rem;
+  color: #fff;
+}
+
+.gradientbg main {
+  width: 60%;
+  padding: 1.618rem;
+  float: left;
+  margin-left: 20%;
+/*  background: #fff; we're going to use a gradient bg instead */
+}
+
+.gradientbg .left {
+  float: left;
+  margin-left: -80%;
+/*  background: #3498db; we're going to use a gradient bg instead */
+}
+
+.gradientbg .right {
+  float: right;
+/*  background: #34495e; we're going to use a gradient bg instead */
+}
+
+.gradientbg {
+  background: linear-gradient(
+to right, #3498db 20%, #fff 20%, #fff 80%, #34495e 80%, #34495e 100%);
+}
+
+@media (max-width: 50rem) {
+  .gradientbg {
+    background: none;
+  }
+  .gradientbg main {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    background: #fff;
+  }
+  .gradientbg .sidebars {
+    background: linear-gradient(to right, #3498db 50%, #34495e 50%);
+  }
+  .gradientbg .sidebars::before,
+  .gradientbg .sidebars::after {
+    content: " ";
+    display: table;
+  }
+  .gradientbg .sidebars::after {
+    clear: both;
+  }
+  .gradientbg .sidebar {
+    width: 50%;
+  }
+  .gradientbg .left {
+    margin-left: 0;
+  }
+}
+@media (max-width: 30rem) {
+  .gradientbg .sidebars {
+    background: none;
+  }
+  .gradientbg .sidebar {
+    width: 100%;
+  }
+  .gradientbg .left {
+    float: none;
+    background: #3498db;
+  }
+  .gradientbg .right {
+    float: none;
+    background: #34495e;
+  }
+}
+
+/*alternative way with flexbox*/
+.flexbg {
+  display: flex;
+}
+
+.flexbg .sidebar {
+  width: 20%;
+  padding: 1.618rem;
+  color: #fff;
+}
+
+.flexbg main {
+  width: 60%;
+  padding: 1.618rem;
+  order: 2;
+  background: #fff;
+}
+
+.flexbg .left {
+  order: 1;
+  background: #3498db;
+}
+
+.flexbg .right {
+  order: 3;
+  background: #34495e;
+}
+
+@media (max-width: 50rem) {
+  .flexbg {
+    flex-wrap: wrap;
+  }
+  .flexbg main {
+    width: 100%;
+    order: 1;
+  }
+  .flexbg .sidebar {
+    width: 50%;
+  }
+  .flexbg .left {
+    order: 2;
+  }
+}
+@media (max-width: 30rem) {
+  .flexbg .sidebar {
+    width: 100%;
+  }
+}
