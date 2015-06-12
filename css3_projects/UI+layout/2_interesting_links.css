@@ -1,0 +1,152 @@
+body {
+  font-family: "Open Sans";
+  font-size: 1.125rem;
+  line-height: 1.618em;
+  color: #454545;
+}
+
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+a {
+  color: #3498db;
+}
+
+a.fade_in_bg {
+  text-decoration: none;
+  border-bottom: .0625em dotted #3498db;
+  padding-left: .25em;
+  padding-right: .25em;
+  padding-bottom: .25em;
+  transition: all .35s;
+}
+
+a.fade_in_bg:hover {
+  background: #3498db;
+  color: #fff;
+  transition: all .35s;
+}
+
+a[class^="slide"] {
+  text-decoration: none;
+  line-height: 1.5em;
+  padding-left: .25em;
+  padding-right: .25em;
+  border-bottom: .0625em dotted #3498db;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+
+a[class^="slide"]:hover {
+  border-bottom: .0625em solid #3498db;
+}
+
+a[class^="slide"]::after {
+  content: attr(data-linktext);
+  background: #3498db;
+  color: #fff;
+  position: absolute;
+  display: block;
+  text-align: center;
+}
+
+a[class^="slide"]:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all .35s;
+}
+
+a.slide_from_left::after {
+  top: 0;
+  right: 100%;
+  left: -100%;
+  transition: all .35s;
+}
+
+a.slide_from_right::after {
+  top: 0;
+  right: -100%;
+  left: 100%;
+  transition: all .35s;
+}
+
+a.slide_from_top::after {
+  top: -100%;
+  bottom: 100%;
+  transition: all .35s;
+}
+
+a.slide_from_bottom::after {
+  top: 100%;
+  bottom: -100%;
+  transition: all .35s;
+}
+
+a.fade_in_underline {
+  text-decoration: none;
+  padding-left: .125em;
+  padding-right: .125em;
+  padding-bottom: .05em;
+  border-bottom: .125em solid #fff;
+  transition: all .35s;
+}
+
+a.fade_in_underline:hover {
+  border-bottom: .125em solid #3498db;
+  transition: all .35s;
+}
+
+a[class^='underline'] {
+  text-decoration: none;
+  padding-left: .125em;
+  padding-right: .125em;
+  padding-bottom: .05em;
+  position: relative;
+}
+
+a[class^='underline']::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  border-bottom: .125em solid #3498db;
+  transition: all .35s;
+}
+
+a[class^='underline']:hover::after {
+  transition: all .35s;
+}
+
+a.underline_from_left::after {
+  right: 100%;
+  left: 0;
+}
+
+a.underline_from_left:hover::after {
+  right: 0;
+}
+
+a.underline_from_right::after {
+  left: 100%;
+  right: 0;
+}
+
+a.underline_from_right:hover::after {
+  left: 0;
+}
+
+a.underline_from_center::after {
+  right: 50%;
+  left: 50%;
+}
+
+a.underline_from_center:hover::after {
+  right: 0;
+  left: 0;
+}
