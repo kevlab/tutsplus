@@ -19,7 +19,9 @@ body {
   position: relative;
   margin: 3rem 0;
   background: #1abc9c;
-  height: 14.75rem; /*12 + 2.75; have to put a height so the rest of the page below the tabs is visible because of abs positioning*/
+  height: 14.75rem;
+  /*12 + 2.75; have to put a height so the rest of the page below the tabs is visible because of abs positioning*/
+  /*we need a height, so use media queries when dealing with responsive sites*/
 }
 
 .tab-content {
