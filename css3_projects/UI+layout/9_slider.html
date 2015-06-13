@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="9_slider.css">
+  <title>CSS slider</title>
+</head>
+  <body>
+  <div class="wrapper">
+
+    <div class="slider">
+
+      <!-- Works with as many slides as are added in-->
+
+      <input type="radio" name="slide-switches" id="slide_text" checked class="slide-switch">
+      <label for="slide_text" class="slide-label">Slide Text</label>
+      <div class="slide-content padded">
+        <h1>Text Slide Heading</h1>
+        <p>The author of these Travels, Mr. Lemuel Gulliver, is my ancient and intimate friend; there is likewise some relation between us on the mother’s side.  About three years ago, Mr. Gulliver growing weary of the concourse of curious people coming to him at his house in Redriff, made a small purchase of land, with a convenient house, near Newark, in Nottinghamshire, his native country; where he now lives retired, yet in good esteem among his neighbours.</p>
+        <p> Although Mr. Gulliver was born in Nottinghamshire, where his father dwelt, yet I have heard him say his family came from Oxfordshire; to confirm which, I have observed in the churchyard at Banbury in that county, several tombs and monuments of the Gullivers.</p>
+        <p> Before he quitted Redriff, he left the custody of the following papers in my hands, with the liberty to dispose of them as I should think fit.  I have carefully perused them three times.</p>
+      </div>
+
+      <input type="radio" name="slide-switches" id="slide_image" class="slide-switch">
+      <label for="slide_image" class="slide-label">Slide Image</label>
+      <div class="slide-content">
+        <img src="http://i.imgur.com/1k0xC1C.jpg">
+      </div>
+
+      <input type="radio" name="slide-switches" id="slide_video" class="slide-switch">
+      <label for="slide_video" class="slide-label">Slide Video</label>
+      <div class="slide-content">
+        <iframe width="100%" height="420" src="https://www.youtube.com/embed/zgrrjh5_7IM" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+    <p>Line outside slider</p>
+
+  </div>
+</body>
+</html>
