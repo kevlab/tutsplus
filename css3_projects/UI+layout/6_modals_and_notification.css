@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  line-height: 1.618em;
+  color: #555;
+  background: #2c3e50;
+}
+
+a {
+  color: #3498db;
+}
+
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 5rem;
+  background: #fff;
+  border: 0.5rem solid #34495e;
+}
+
+.modal {
+  position: absolute;
+  width: 0;
+  height: 0; /* + hidden overflow > modal is invisible*/
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%; /*in the middle of the page*/
+  overflow: hidden;
+  background: transparent;
+}
+
+.modal:target {
+  background: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: background .35s;
+}
+
+.modal:target .content {
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: rgba(255, 255, 255, 0.25) 0 0 0 .5rem;
+  width: 30rem;
+  padding: 2rem;
+  position: absolute;
+  top: 30%;
+  left: calc(50% - 15rem);
+}
+
+.modal:target .close {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+}
+
+.modal:target .close a {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  text-indent: 2rem;
+  overflow: hidden;
+  background: #3498db;
+  border-radius: 50%;
+  border: .125rem solid #fff;
+}
+
+.modal:target .close:after {
+  content: 'X';
+  font-weight: 800;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 2rem;
+  line-height: 2rem;
+  width: 2rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.notification {
+  transition: all 0.35s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-top: -100%;
+  background: linear-gradient(#1abc9c, #16a085);
+  border-bottom: 0.125rem solid #1abc9c;
+  box-shadow: rgba(0,0,0,0.4) 0 0.25rem 0.25rem 0;
+}
+
+.notification .content {
+  text-align: center;
+  color: #fff;
+  text-shadow: rgba(0,0,0,0.5) 0 -0.0625rem 0.0625rem;
+}
+
+.notification .close {
+  position: absolute;
+  top: calc(50% - 1rem);
+  right: 1rem;
+}
+
+.notification .close a {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  text-indent: 2rem;
+  overflow: hidden;
+}
+
+.notification .close:after {
+  content: 'X';
+  font-weight: 800;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  line-height: 2rem;
+  width: 2rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.notification:target {
+  transition: all 0.35s;
+  margin-top: 0;
+}
+
+.warning {
+  background: linear-gradient(#e74c3c, #c0392b);
+  border-bottom: 0.125rem solid #e74c3c;
+}
