@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  line-height: 1.618em;
+}
+
+.wrapper {
+  max-width: 35rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+path {
+  transform-origin: 250px 250px;
+}
+
+#back_triangles {
+  transform: rotate(-38deg);
+  animation: back_triangles 2.5s ease-out;
+}
+
+@keyframes back_triangles {
+  0% {transform: scale(0,0) rotate(322deg);}
+  100% {transform: scale(1,1) rotate(-38deg);}
+}
+
+#front_triangles {
+  transform: rotate(-38deg);
+  animation: front_triangles 2.5s ease-out;
+}
+
+@keyframes front_triangles {
+  0% {
+    opacity: 0;
+    transform: scale(0,0) rotate(-38deg);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(0,0) rotate(-38deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1,1) rotate(322deg);
+  }
+}
+
+#letter_a {
+animation: letter_a 2.5s linear;
+
+}
+
+@keyframes letter_a {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0, 0);
+  }
+  90% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
