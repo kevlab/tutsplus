@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Old Standard TT";
+  font-size: 2.38vh;
+  height: 100vh;
+  width: 500%; /*nr of pages * 100%*/
+  overflow: hidden;
+  background-color: #fefbec;
+}
+
+.pagination {
+  font-size: 32px;
+  font-size: 2rem;
+  position: fixed;
+  z-index: 5;
+  padding: 0 0.25em;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: #505652;
+}
+
+.pagination a {
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #fefbec;
+}
+
+.wrapper {
+  height: 100vh;
+  width: auto; /*+nowrap: puts all five pages l to r rather than top to bottom*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+          transition: transform 0.6s ease-in-out;
+}
+
+.images {
+  display: block;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image {
+  width: 33.33%;
+  overflow: hidden;
+}
+
+.image img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.text {
+  padding: 32px 32px;
+  padding: 2rem 2rem;
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+}
+
+.text p:first-of-type {
+  margin-top: 0;
+}
+
+.text p:first-of-type:first-letter {
+  font-size: 1.5em;
+}
+
+.text h1 {
+  margin: 0;
+}
+
+#two,
+#four {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#two img,
+#four img {
+  height: auto;
+  width: 100vw;
+  display: block;
+}
+
+/* Clicking the nav links sets not just the page as the active target, but also the .slideswitch class div that bears the same ID. The sibling selector then finds all the .section divs that come after the slideswitch div, and translates them the right amount */
+.slideswitch {
+  display: none;
+}
+
+.slideswitch[ id="one"]:target ~ .wrapper .section {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.slideswitch[ id="two"]:target ~ .wrapper .section {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.slideswitch[ id="three"]:target ~ .wrapper .section {
+  -webkit-transform: translateX(-200%);
+      -ms-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+
+.slideswitch[ id="four"]:target ~ .wrapper .section {
+  -webkit-transform: translateX(-300%);
+      -ms-transform: translateX(-300%);
+          transform: translateX(-300%);
+}
+
+.slideswitch[ id="five"]:target ~ .wrapper .section {
+  -webkit-transform: translateX(-400%);
+      -ms-transform: translateX(-400%);
+          transform: translateX(-400%);
+}
+
+.slideswitch[ id="one"]:target ~ .pagination #pagination_one,
+.slideswitch[ id="two"]:target ~ .pagination #pagination_two,
+.slideswitch[ id="three"]:target ~ .pagination #pagination_three,
+.slideswitch[ id="four"]:target ~ .pagination #pagination_four,
+.slideswitch[ id="five"]:target ~ .pagination #pagination_five {
+  color: #e0d28c;
+}
+
+@media (max-aspect-ratio: 10/7) {
+  body {
+    font-size: 1.5vw;
+  }
+  .text {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+  }
+}
+
+@media (max-aspect-ratio: 9/7) {
+  body {
+    font-size: 1.7vw;
+  }
+}
+
+@media (max-aspect-ratio: 8/7) {
+  body {
+    font-size: 1.9vw;
+  }
+}
+
+@media (max-aspect-ratio: 7/7) {
+  body {
+    font-size: 2.1vw;
+  }
+}
+
+@media (max-aspect-ratio: 6/7) {
+  body {
+    font-size: 2.3vw;
+  }
+}
+
+@media (max-aspect-ratio: 5/7) {
+  body {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-aspect-ratio: 4/7) {
+  body {
+    font-size: 2.7vw;
+  }
+}
