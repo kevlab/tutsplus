@@ -1,0 +1,185 @@
+/*
+Base spotlight concept from http://www.rwe-uk.com/blog/comments/rich_css_spotlight_with_elliptical_gradients_in_safari_chrome_firefox/
+
+Lamp effect supported by Chrome and Safari, but not Firefox. Spotlight effect supported in all three.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 150vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: -webkit-linear-gradient(#000000, rgba(25,53,93,1) 90%, rgba(25,53,93,1));
+  background-image: linear-gradient(#000000, rgba(25,53,93,1) 90%, rgba(25,53,93,1));
+}
+
+.stage_floor {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  height: 150%;
+  background-image: -webkit-radial-gradient(rgba(54,90,143,0.9), rgba(54,90,143,0));
+  background-image: radial-gradient(rgba(54,90,143,0.9), rgba(54,90,143,0));
+  -webkit-transform: scale(1.0,0.3);
+      -ms-transform: scale(1.0,0.3);
+          transform: scale(1.0,0.3);
+}
+
+.stage_highlight {
+  position: absolute;
+  top: 0;
+  left: 25vh;
+  width: 100vh;
+  height: 100%;
+  overflow: hidden;
+  background-image: -webkit-radial-gradient(50% 82%, ellipse closest-side, rgb(84,120,173), rgba(84,120,173,0) 100%);
+  background-image: radial-gradient(ellipse closest-side at 50% 82%, rgb(84,120,173), rgba(84,120,173,0) 100%);
+  -webkit-animation: move_highlight 5s linear infinite;
+          animation: move_highlight 5s linear infinite;
+}
+
+.spotlight_swivel {
+  -webkit-animation: rotate_spotlight 5s linear infinite;
+          animation: rotate_spotlight 5s linear infinite;
+}
+
+.lamp {
+  position: absolute;
+  width: 40vh;
+  height: 400vh;
+  background-image: -webkit-radial-gradient(ellipse, rgba(82,116,168,0.5), rgba(82,116,168,0.2) 25%, rgba(82,116,168,0) 50%);
+  background-image: radial-gradient(ellipse, rgba(82,116,168,0.5), rgba(82,116,168,0.2) 25%, rgba(82,116,168,0) 50%);
+  top:-220vh;
+  left:55vh;
+  -webkit-transform: perspective(23vh) rotateX(30deg);
+          transform: perspective(23vh) rotateX(30deg);
+}
+
+.spotlight {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transform: scale(1.5,3);
+      -ms-transform: scale(1.5,3);
+          transform: scale(1.5,3);
+  position: absolute;
+  top: -20vh;
+  left: calc(50% - 75vh);
+}
+
+.spotlight:after {
+  content: '';
+  position: absolute;
+  top: -50vh;
+  background-image: -webkit-radial-gradient(75% 75%, ellipse closest-corner, rgba(55,89,138,0.2), rgba(55,89,138,0));
+  background-image: radial-gradient(ellipse closest-corner at 75% 75%, rgba(55,89,138,0.2), rgba(55,89,138,0));
+  border-radius: 100%;
+  width: 100vh;
+  height: 100vh;
+  clip: rect(50vh, 100vh, 100vh, 50vh);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@-webkit-keyframes rotate_spotlight {
+  0% {
+    -webkit-transform: rotate(0deg) scaleY(1) translateY(0);
+            transform: rotate(0deg) scaleY(1) translateY(0);
+  }
+  25% {
+    -webkit-transform: rotate(-15deg) scaleY(1.1) translateY(-3vh);
+            transform: rotate(-15deg) scaleY(1.1) translateY(-3vh);
+  }
+  50% {
+    -webkit-transform: rotate(0deg) scaleY(1) translateY(0);
+            transform: rotate(0deg) scaleY(1) translateY(0);
+  }
+  75% {
+    -webkit-transform: rotate(15deg) scaleY(1.1) translateY(-3vh);
+            transform: rotate(15deg) scaleY(1.1) translateY(-3vh);
+  }
+}
+
+@keyframes rotate_spotlight {
+  0% {
+    -webkit-transform: rotate(0deg) scaleY(1) translateY(0);
+            transform: rotate(0deg) scaleY(1) translateY(0);
+  }
+  25% {
+    -webkit-transform: rotate(-15deg) scaleY(1.1) translateY(-3vh);
+            transform: rotate(-15deg) scaleY(1.1) translateY(-3vh);
+  }
+  50% {
+    -webkit-transform: rotate(0deg) scaleY(1) translateY(0);
+            transform: rotate(0deg) scaleY(1) translateY(0);
+  }
+  75% {
+    -webkit-transform: rotate(15deg) scaleY(1.1) translateY(-3vh);
+            transform: rotate(15deg) scaleY(1.1) translateY(-3vh);
+  }
+}
+
+@-webkit-keyframes move_highlight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(25vh);
+            transform: translateX(25vh);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(-25vh);
+            transform: translateX(-25vh);
+  }
+}
+
+@keyframes move_highlight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(25vh);
+            transform: translateX(25vh);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(-25vh);
+            transform: translateX(-25vh);
+  }
+}
