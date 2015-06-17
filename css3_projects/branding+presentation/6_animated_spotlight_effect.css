@@ -95,18 +95,6 @@ body {
 
 .spotlight:after {
   content: '';
-  position: absolute;
-  top: -50vh;
-  background-image: -webkit-radial-gradient(75% 75%, ellipse closest-corner, rgba(55,89,138,0.2), rgba(55,89,138,0));
-  background-image: radial-gradient(ellipse closest-corner at 75% 75%, rgba(55,89,138,0.2), rgba(55,89,138,0));
-  border-radius: 100%;
-  width: 100vh;
-  height: 100vh;
-  clip: rect(50vh, 100vh, 100vh, 50vh);
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
 
 @-webkit-keyframes rotate_spotlight {
   0% {

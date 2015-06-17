@@ -1,0 +1,587 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Droid Serif";
+  line-height: 1em;
+  background: #000;
+}
+
+.wrapper {
+  position: relative;
+  width: 800px;
+  height: 480px;
+  margin: 2rem auto;
+  overflow: hidden;
+  background-color: #fff;
+  background: radial-gradient(ellipse at center, #fff 40%, #ddd 100%);
+}
+
+.part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  animation-fill-mode: both;
+}
+
+.part span {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  white-space: nowrap;
+  font-size: 4rem;
+  animation-fill-mode: both;
+}
+
+.part span span {
+  position: absolute;
+  display: block;
+}
+
+#one span:nth-of-type(1) {
+  animation-name: fadein;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  left: 84px;
+  top: 85px;
+}
+
+#one span:nth-of-type(2) {
+  animation-name: fadein;
+  animation-duration: 0.5s;
+  animation-delay: 1.4s;
+  left: 170px;
+  top: 85px;
+}
+
+#one span:nth-of-type(3) {
+  animation-name: slide_from_left;
+  animation-duration: 0.5s;
+  animation-delay: 1.6s;
+  font-size: 6.7em;
+  font-style: italic;
+  left: 160px;
+  top: 165px;
+}
+
+#one span:nth-of-type(4) {
+  animation-name: slide_from_top;
+  animation-duration: 0.5s;
+  animation-delay: 2.3s;
+  left: 389px;
+  top: 255px;
+}
+
+#one span:nth-of-type(5) {
+  animation-name: stamp;
+  animation-duration: 0.4s;
+  animation-delay: 3.2s;
+  font-size: 7.3em;
+  font-weight: 700;
+  left: 230px;
+  top: 345px;
+}
+
+#one {
+  transform-origin: 100% 100%;
+  animation-name: part_one_out;
+  animation-duration: 8s;
+  animation-delay: 4s;
+}
+
+#two span {
+  font-size: 4.5em;
+}
+
+#two span:nth-of-type(1) {
+  top: 100px;
+  left: 36px;
+  animation-name: hinge_in;
+  animation-duration: 1s;
+  animation-delay: 4.2s;
+  transform-origin: 70px 450px;
+}
+
+#two span:nth-of-type(2) {
+  top: 100px;
+  left: 120px;
+  animation-name: hinge_in;
+  animation-duration: 1s;
+  animation-delay: 4.7s;
+  transform-origin: 70px 450px;
+}
+
+#two span:nth-of-type(3) {
+  top: 180px;
+  left: 50px;
+  font-size: 6.7em;
+  line-height: 1em;
+  font-style: italic;
+  opacity: 1;
+  display: block;
+  overflow: hidden;
+  animation-name: grow_from_left;
+  animation-duration: 1.5s;
+  animation-delay: 5.7s;
+}
+
+#two span:nth-of-type(4) {
+  top: 230px;
+  left: 480px;
+  font-weight: 700;
+  animation-name: fadein;
+  animation-duration: 0.5s;
+  animation-delay: 6.2s;
+}
+
+#two span:nth-of-type(5) {
+  top: 225px;
+  left: 507px;
+  font-weight: 700;
+  font-size: 6em;
+  animation-name: fadein;
+  animation-duration: 0.5s;
+  animation-delay: 6.45s;
+}
+
+#two span:nth-of-type(6) {
+  top: 220px;
+  left: 539px;
+  font-weight: 700;
+  font-size: 8em;
+  animation-name: fadein;
+  animation-duration: 0.5s;
+  animation-delay: 6.7s;
+}
+
+#two span:nth-of-type(7) {
+  top: 215px;
+  left: 578px;
+  font-weight: 700;
+  font-size: 10em;
+  animation-name: fadein;
+  animation-duration: 0.5s;
+  animation-delay: 6.95s;
+}
+
+#two span:nth-of-type(8) {
+  top: 345px;
+  left: 36px;
+  animation-name: emerge;
+  animation-duration: 0.2s;
+  animation-delay: 7.2s;
+}
+
+#two {
+  animation-name: part_two_out;
+  animation-duration: 1s;
+  animation-delay: 8.2s;
+}
+
+#three span {
+  opacity: 1;
+}
+
+#three span.around {
+  left: 260px;
+  top: 100px;
+  animation-name: half_spin;
+  animation-duration: 1s;
+  animation-delay: 8.4s;
+  transform-origin: 100px 100px;
+}
+
+#three span.around span:nth-of-type(1) {
+  top: 30px;
+  left: 0;
+  transform: rotate(-30deg);
+}
+
+#three span.around span:nth-of-type(2) {
+  top: 10px;
+  left: 40px;
+  transform: rotate(-20deg);
+}
+
+#three span.around span:nth-of-type(3) {
+  top: 0;
+  left: 75px;
+  transform: rotate(-10deg);
+}
+
+#three span.around span:nth-of-type(4) {
+  top: 0;
+  left: 120px;
+  transform: rotate(10deg);
+}
+
+#three span.around span:nth-of-type(5) {
+  top: 10px;
+  left: 170px;
+  transform: rotate(20deg);
+}
+
+#three span.around span:nth-of-type(6) {
+  top: 30px;
+  left: 210px;
+  transform: rotate(30deg);
+}
+
+#three span.the {
+  left: 330px;
+  top: 200px;
+  animation-name: fadein;
+  animation-duration: 0.75s;
+  animation-delay: 8.9s;
+}
+
+#three span.world {
+  left: 280px;
+  top: 300px;
+  animation-name: half_spin;
+  animation-duration: 1s;
+  transform-origin: 100px -100px;
+  animation-delay: 9.4s;
+}
+
+#three span.world span:nth-of-type(1) {
+  top: 0;
+  left: 0;
+  transform: rotate(20deg);
+}
+
+#three span.world span:nth-of-type(2) {
+  top: 15px;
+  left: 58px;
+  transform: rotate(10deg);
+}
+
+#three span.world span:nth-of-type(3) {
+  top: 16px;
+  left: 100px;
+  transform: rotate(-2deg);
+}
+
+#three span.world span:nth-of-type(4) {
+  top: 12px;
+  left: 138px;
+  transform: rotate(-10deg);
+}
+
+#three span.world span:nth-of-type(5) {
+  top: 4px;
+  left: 162px;
+  transform: rotate(-20deg);
+}
+
+#three {
+  animation-name: part_three_out;
+  animation-duration: 0.5s;
+  animation-delay: 11.4s;
+}
+
+#four span:nth-of-type(1) {
+  top: 100px;
+  left: 240px;
+  font-style: italic;
+  animation-name: slide_from_top;
+  animation-duration: 0.5s;
+  animation-delay: 11.15s;
+}
+
+#four span:nth-of-type(2) {
+  top: 190px;
+  left: 240px;
+  font-size: 2.5em;
+  animation-name: slide_from_left;
+  animation-duration: 0.5s;
+  animation-delay: 12.15s;
+}
+
+#four span:nth-of-type(3) {
+  top: 210px;
+  left: 350px;
+  font-size: 8em;
+  animation-name: slide_from_right;
+  animation-duration: 0.5s;
+  animation-delay: 12.55s;
+}
+
+#four span:nth-of-type(4) {
+  top: 340px;
+  left: 230px;
+  animation-name: slide_from_bottom;
+  animation-duration: 0.5s;
+  animation-delay: 13.4s;
+}
+
+#four {
+  animation-name: part_four_out;
+  animation-duration: 0.5s;
+  animation-delay: 14.15s;
+}
+
+#five span:nth-of-type(1) {
+  top: 100px;
+  left: 70px;
+  font-size: 3em;
+  animation-name: slide_from_right;
+  animation-duration: 2s;
+  animation-delay: 13.9s;
+}
+
+#five span:nth-of-type(2) {
+  top: 200px;
+  left: 150px;
+  font-size: 5em;
+  font-weight: 700;
+  animation-name: stamp;
+  animation-duration: 0.2s;
+  animation-delay: 15.9s;
+}
+
+#five span:nth-of-type(3) {
+  top: 270px;
+  left: 250px;
+  font-size: 5em;
+  font-weight: 700;
+  animation-name: stamp;
+  animation-duration: 0.2s;
+  animation-delay: 16.65s;
+}
+
+#five span:nth-of-type(4) {
+  top: 270px;
+  left: 690px;
+  font-size: 5em;
+  font-weight: 700;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 17.15s;
+}
+
+#five {
+  animation-name: part_five_out;
+  animation-duration: 1.5s;
+  animation-delay: 18.9s;
+}
+
+#six span {
+  opacity: 1;
+}
+
+#six span:nth-of-type(1) {
+  top: 170px;
+  left: 110px;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 19.9s;
+}
+
+#six span:nth-of-type(2) {
+  top: 170px;
+  left: 360px;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 20.4s;
+}
+
+#six span:nth-of-type(3) {
+  top: 270px;
+  left: 210px;
+  font-style: italic;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 21.9s;
+}
+
+#six span:nth-of-type(4) {
+  top: 270px;
+  left: 490px;
+  font-style: italic;
+  font-weight: 700;
+  animation-name: fadein;
+  animation-duration: 2.5s;
+  animation-delay: 23.4s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide_from_left {
+  from {
+    opacity: 1;
+    left: -50rem;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide_from_top {
+  from {
+    opacity: 1;
+    top: -30rem;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide_from_right {
+  from {
+    opacity: 1;
+    left: 110%;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide_from_bottom {
+  from {
+    opacity: 1;
+    top: 110%;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes stamp {
+  from {
+    opacity: 0;
+    transform: scale(5, 5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes part_one_out {
+  0% {
+    transform: rotate(0deg) scale(1, 1) translate(0, 0);
+  }
+  5% {
+    transform: rotate(-90deg) scale(1.03, 1.03) translate(555px, -605px);
+  }
+  10% {
+    transform: rotate(-90deg) scale(1.03, 1.03) translate(555px, -605px);
+  }
+  15% {
+    transform: rotate(-90deg) scale(1.03, 1.03) translate(555px, -720px);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-90deg) scale(1.03, 1.03) translate(555px, -720px);
+    opacity: 0;
+  }
+}
+
+@keyframes hinge_in {
+  0% {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  90% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes grow_from_left {
+  from {
+    opacity: 1;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes emerge {
+  from {
+    opacity: 0;
+    transform: scale(0.2, 0.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes part_two_out {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1, 1) translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(180deg) scale(3, 3) translate(550px, -750px);
+  }
+}
+
+@keyframes half_spin {
+  from {
+    opacity: 0;
+    transform: rotate(-180deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes part_three_out {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  99% {
+    opacity: 1;
+    transform: translate(0, 500px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 500px);
+  }
+}
+
+@keyframes part_four_out {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  99% {
+    opacity: 1;
+    transform: translate(-800px, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-800px, 0);
+  }
+}
+
+@keyframes part_five_out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
