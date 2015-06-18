@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="10_svg_animation.css">
+  <title>SVG Animation</title>
+</head>
+  <body>
+  <div class="scene">
+
+    <div class="shops">
+
+      <svg width="3900px" height="465px" viewbox="0 0 3900 465">
+
+        <defs>
+          <g id="shop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+            <g sketch:type="MSLayerGroup" stroke="#000000" stroke-width="3">
+              <path d="M0,0 L569,0 L569,465 L388.496094,465 L360.414063,453.659794 L211.289062,453.659794 L181.371094,465 L0,465 L0,0 Z" fill="currentColor" sketch:type="MSShapeGroup" class="main"></path>
+              <rect fill-opacity="0.2" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="569" height="175" class="top"></rect>
+              <rect fill-opacity="0.37" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="175" width="569" height="35" class="beam"></rect>
+              <path d="M0,94 L569,94 L489,175 L80,175 L0,94 Z" fill-opacity="0.15" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(285, 134) scale(1, -1) translate(-285, -134) " class="cover"></path>
+              <path d="M360,238 L360,454 L209,454 L209,238 L360,238 Z" sketch:type="MSShapeGroup" class="doorframe"></path>
+              <rect fill="#AEC3D0" sketch:type="MSShapeGroup" x="222" y="250" width="125" height="204" class="doorglass"></rect>
+              <path d="M548,427 L397,427 L397,238 L548,238 L548,427 Z" sketch:type="MSShapeGroup" class="rightwindowframe"></path>
+              <rect fill="#AEC3D0" sketch:type="MSShapeGroup" x="410" y="250" width="125" height="164" class="rightwindowglass"></rect>
+              <path d="M173,427 L22,427 L22,238 L173,238 L173,427 Z" sketch:type="MSShapeGroup" class="leftwindowframe"></path>
+              <rect fill="#AEC3D0" sketch:type="MSShapeGroup" x="35" y="250" width="125" height="164" class="leftwindowglass"></rect>
+            </g>
+          </g>
+        </defs>
+
+        <use id="purple" x="-650" y="0" xlink:href="#shop"></use>
+        <use id="red" x="-650" y="0" xlink:href="#shop"></use>
+        <use id="green" x="-650" y="0" xlink:href="#shop"></use>
+        <use id="blue" x="-650" y="0" xlink:href="#shop"></use>
+        <use id="lavender" x="-650" y="0" xlink:href="#shop"></use>
+        <use id="yellow" x="-650" y="0" xlink:href="#shop"></use>
+        <use id="blue_starter" x="0" y="0" xlink:href="#shop"></use>
+        <use id="lavender_starter" x="650" y="0" xlink:href="#shop"></use>
+        <use id="yellow_starter" x="1300" y="0" xlink:href="#shop"></use>
+
+      </svg>
+
+    </div>
+
+    <div class="position_littleguy">
+      <div class="littleguy"></div>
+    </div>
+
+  </div>
+</body>
+</html>

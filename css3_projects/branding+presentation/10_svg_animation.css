@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/background.svg") repeat-x;
+  border-bottom: 5px solid #000;
+  -webkit-animation: move_background 6s infinite linear;
+          animation: move_background 6s infinite linear;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.position_littleguy {
+  position: absolute;
+  bottom: 140px;
+  left: calc(50% - 142px);
+}
+
+.littleguy {
+  -webkit-animation: walk 1.5s steps(8) infinite;
+          animation: walk 1.5s steps(8) infinite;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/littleguy.svg") 0 0 no-repeat;
+  width: 285px;
+  height: 380px;
+  -webkit-transform: scale(0.5, 0.5);
+      -ms-transform: scale(0.5, 0.5);
+          transform: scale(0.5, 0.5);
+}
+
+.shops {
+  position: absolute;
+  bottom: 275px;
+}
+
+#purple {
+  -webkit-animation: move_shop 36s infinite linear;
+          animation: move_shop 36s infinite linear;
+  color: #772abc;
+}
+
+#red {
+  -webkit-animation: move_shop 36s infinite linear 6s;
+          animation: move_shop 36s infinite linear 6s;
+  color: #bc1e27;
+}
+
+#green {
+  -webkit-animation: move_shop 36s infinite linear 12s;
+          animation: move_shop 36s infinite linear 12s;
+  color: #81bc20;
+}
+
+#blue {
+  -webkit-animation: move_shop 36s infinite linear 18s;
+          animation: move_shop 36s infinite linear 18s;
+  color: #38bcac;
+}
+
+#lavender {
+  -webkit-animation: move_shop 36s infinite linear 24s;
+          animation: move_shop 36s infinite linear 24s;
+  color: #9a48bc;
+}
+
+#yellow {
+  -webkit-animation: move_shop 36s infinite linear 30s;
+          animation: move_shop 36s infinite linear 30s;
+  color: #e1c820;
+}
+
+use#blue_starter {
+  -webkit-transform: translateX(3900px);
+      -ms-transform: translateX(3900px);
+          transform: translateX(3900px);
+  -webkit-animation: move_shop 36s 1 linear;
+          animation: move_shop 36s 1 linear;
+  color: #38bcac;
+}
+
+#lavender_starter {
+  -webkit-transform: translateX(3900px);
+      -ms-transform: translateX(3900px);
+          transform: translateX(3900px);
+  -webkit-animation: move_shop 36s 1 linear;
+          animation: move_shop 36s 1 linear;
+  color: #9a48bc;
+}
+
+#yellow_starter {
+  -webkit-transform: translateX(3900px);
+      -ms-transform: translateX(3900px);
+          transform: translateX(3900px);
+  -webkit-animation: move_shop 36s 1 linear;
+          animation: move_shop 36s 1 linear;
+  color: #e1c820;
+}
+
+@-webkit-keyframes walk {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -2280px 0;
+  }
+}
+
+@keyframes walk {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -2280px 0;
+  }
+}
+
+@-webkit-keyframes move_background {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 650px 0;
+  }
+}
+
+@keyframes move_background {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 650px 0;
+  }
+}
+
+@-webkit-keyframes move_shop {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(3900px);
+            transform: translateX(3900px);
+  }
+}
+
+@keyframes move_shop {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(3900px);
+            transform: translateX(3900px);
+  }
+}
